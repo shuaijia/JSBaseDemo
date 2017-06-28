@@ -25,7 +25,7 @@ public class HuaLangActivity extends Activity {
 
     private ViewPager vp_lunbo;
     private RelativeLayout rl_hualang;
-    private int a;
+    int a;
 
     private List<String> list=new ArrayList<>();
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mcxtzhang.pathanimlib.PathAnimView
+        android:id="@+id/pathAnimView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@color/light_blue_a400"
+        android:padding="5dp"/>
+
+    <com.mcxtzhang.pathanimlib.StoreHouseAnimView
+        android:id="@+id/storeHouseAnimView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>

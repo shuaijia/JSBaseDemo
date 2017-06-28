@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jia.demo">
+
+    <!-- 添加读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 访问互联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- 配置单元测试框架的启动项 -->
+    <!-- 这里设置了android:targetPackage与项目的package相同，这样当前单元测试和应用程序会运行在同一个进程里面 -->
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="test"
+        android:targetPackage="com.jia.demo" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+
+        <!-- 单元测试库 -->
+        <uses-library android:name="android.test.runner" />
+
+        <!-- =======================Activity========================== -->
+        <activity android:name=".activity.GuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".base.BaseWebViewActivity" />
+        <activity android:name=".activity.TagActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.HtmlCacheActivity" />
+        <activity android:name=".activity.ParallaxActivity" />
+        <activity android:name=".activity.DBActivity" />
+        <activity android:name=".activity.EventBusFirstActivity" />
+        <activity android:name=".activity.EventBusSecondActivity" />
+        <activity android:name=".activity.IndexActivity" />
+        <activity android:name=".activity.DataBindingActivity" />
+        <activity android:name=".activity.RxJavaActivity" />
+        <activity android:name=".activity.OkHttpActivity" />
+        <activity android:name=".activity.MaterialDesignActivity" />
+        <activity android:name=".activity.VerticalLooperViewActivity" />
+        <activity android:name=".activity.CircularProgressActivity" />
+        <activity android:name=".activity.DownLoadActivity" />
+        <activity android:name=".activity.JavaActivity" />
+        <activity android:name=".activity.RetrofitActivity" />
+        <activity android:name=".activity.GlideImageViewActivity" />
+        <activity android:name=".activity.RecyclerViewActivity" />
+        <activity android:name=".activity.SVGActivity" />
+        <activity android:name=".activity.PathAnimationActivity" />
+        <activity android:name=".activity.HuaLangActivity" />
+        <activity android:name=".activity.WaterWaveProgressActivity"/>
+
+        <!-- =======================Service========================== -->
+
+        <activity android:name=".activity.WaterWaveProgressActivity"></activity>
+    </application>
+
+</manifest>

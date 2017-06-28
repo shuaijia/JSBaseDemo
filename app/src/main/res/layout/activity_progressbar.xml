@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jia="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jia.demo.view.JsHorizontalProgressBarWithNum
+        android:id="@+id/pb_hori_num"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        jia:progress_reached_color="@color/red_500"
+        jia:progress_text_color="@color/blue_600"
+        jia:progress_text_size="15sp"
+        jia:progress_text_visibility="visible"
+        jia:progress_unreached_color="@color/yellow_400" />
+
+    <com.jia.demo.view.JsCircleProgressBar
+        android:id="@+id/pb_circle"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+</LinearLayout>

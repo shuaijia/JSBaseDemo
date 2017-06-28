@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv3_svg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/svg_as_material" />
+
+        <ImageView
+            android:id="@+id/iv1_svg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/svg_as_material" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用AS自己创建的svg静态图" />
+
+
+        <ImageView
+            android:id="@+id/iv4_svg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/svg_yun" />
+
+        <ImageView
+            android:id="@+id/iv5_svg"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:src="@drawable/svg_yun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用网络工具创建的svg图片" />
+    </LinearLayout>
+</ScrollView>

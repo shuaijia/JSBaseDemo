@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_db_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="DBActivity"/>
+
+    <Button
+        android:id="@+id/bt_db_add"
+        android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:text="增"/>
+
+    <Button
+        android:id="@+id/bt_db_delete"
+        android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:text="删"/>
+
+    <Button
+        android:id="@+id/bt_db_update"
+        android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:text="改"/>
+
+    <Button
+        android:id="@+id/bt_db_quaryone"
+        android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:text="查one"/>
+
+    <Button
+        android:id="@+id/bt_db_quaryall"
+        android:layout_marginTop="30dp"
+        android:layout_width="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:text="查all"/>
+</LinearLayout>

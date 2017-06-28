@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_vertical_looper_content"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <com.jia.demo.view.CircularImage
+        android:id="@+id/ci_vertical_looper"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_vertical_looper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ci_vertical_looper"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:text="我就是个demo"
+        android:textSize="18sp" />
+
+</RelativeLayout>

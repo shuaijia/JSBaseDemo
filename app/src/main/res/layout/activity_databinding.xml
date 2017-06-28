@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="data"
+            type="com.jia.demo.bean.DataBindingBean" />
+        <variable
+            name="event"
+            type="com.jia.demo.bean.EventBindingBean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="55dp"
+            android:text="绑定数据" />
+
+        <!--数据绑定按钮-->
+        <TextView
+            android:id="@+id/tv_databinding"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#abc001"
+            android:gravity="center"
+            android:text="@{data.note}" />
+
+        <!--事件绑定按钮-->
+        <Button
+            android:id="@+id/bt_databinding"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="绑定事件"
+
+            />
+        <!--android:onClick="@{event::onClick}"-->
+    </LinearLayout>
+
+</layout>

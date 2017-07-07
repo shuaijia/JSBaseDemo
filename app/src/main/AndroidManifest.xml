@@ -27,7 +27,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@android:style/Theme.Light.NoTitleBar">
+        android:theme="@style/AppTheme">
 
         <!-- 单元测试库 -->
         <uses-library android:name="android.test.runner" />
@@ -55,7 +55,8 @@
         <activity android:name=".activity.DataBindingActivity" />
         <activity android:name=".activity.RxJavaActivity" />
         <activity android:name=".activity.OkHttpActivity" />
-        <activity android:name=".activity.MaterialDesignActivity" />
+        <activity android:name=".activity.MaterialDesignActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".activity.VerticalLooperViewActivity" />
         <activity android:name=".activity.CircularProgressActivity" />
         <activity android:name=".activity.DownLoadActivity" />

@@ -4,13 +4,13 @@ apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
 
     defaultConfig {
         applicationId "com.jia.demo"
         minSdkVersion 16
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
@@ -51,14 +51,14 @@ allprojects {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:design:25.0.1'
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'com.squareup.okhttp3:okhttp:3.0.1'
     compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:25.0.1'
     // 标签
     compile 'com.google.android:flexbox:0.2.5'
-    compile 'com.android.support:cardview-v7:25.2.0'
+    compile 'com.android.support:cardview-v7:25.0.1'
     compile 'org.greenrobot:eventbus:3.0.0'
     // 数据库
     compile 'org.greenrobot:greendao:3.0.1'
@@ -75,5 +75,8 @@ dependencies {
 
     // path动画库
     compile 'com.github.mcxtzhang:PathAnimView:V1.0.0'
+
+    // 自己封装的运行时权限库
+    compile 'com.github.shuaijia:JsPermission:v1.0'
 }
 

@@ -55,8 +55,9 @@
         <activity android:name=".activity.DataBindingActivity" />
         <activity android:name=".activity.RxJavaActivity" />
         <activity android:name=".activity.OkHttpActivity" />
-        <activity android:name=".activity.MaterialDesignActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activity.MaterialDesignActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.VerticalLooperViewActivity" />
         <activity android:name=".activity.CircularProgressActivity" />
         <activity android:name=".activity.DownLoadActivity" />
@@ -67,11 +68,11 @@
         <activity android:name=".activity.SVGActivity" />
         <activity android:name=".activity.PathAnimationActivity" />
         <activity android:name=".activity.HuaLangActivity" />
-        <activity android:name=".activity.WaterWaveProgressActivity"/>
 
-        <!-- =======================Service========================== -->
 
-        <activity android:name=".activity.WaterWaveProgressActivity"></activity>
+        <activity android:name=".activity.WaterWaveProgressActivity" />
+        <activity android:name=".activity.NotificationActivity" />
+        <activity android:name=".activity.PopupWindowActivity"/>
     </application>
 
 </manifest>

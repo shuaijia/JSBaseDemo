@@ -20,9 +20,11 @@ import com.jia.demo.activity.IndexActivity;
 import com.jia.demo.activity.JavaActivity;
 import com.jia.demo.activity.MaterialDesignActivity;
 import com.jia.demo.activity.DownLoadActivity;
+import com.jia.demo.activity.NotificationActivity;
 import com.jia.demo.activity.OkHttpActivity;
 import com.jia.demo.activity.ParallaxActivity;
 import com.jia.demo.activity.PathAnimationActivity;
+import com.jia.demo.activity.PopupWindowActivity;
 import com.jia.demo.activity.RecyclerViewActivity;
 import com.jia.demo.activity.RetrofitActivity;
 import com.jia.demo.activity.RxJavaActivity;
@@ -127,6 +129,12 @@ public class MainActivity extends Activity {
                 case 22:
                     login.setNote("水纹波浪加载进度");
                     break;
+                case 23:
+                    login.setNote("自定义通知");
+                    break;
+                case 24:
+                    login.setNote("封装PopupWindow");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -219,6 +227,12 @@ public class MainActivity extends Activity {
                         break;
                     case 22:
                         startActivity(new Intent(mContext, WaterWaveProgressActivity.class));
+                        break;
+                    case 23:
+                        startActivity(new Intent(mContext, NotificationActivity.class));
+                        break;
+                    case 24:
+                        startActivity(new Intent(mContext, PopupWindowActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

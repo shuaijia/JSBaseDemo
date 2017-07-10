@@ -50,4 +50,9 @@
         <attr name="cpv_reachCapRound" format="boolean"/>
     </declare-styleable>
 
+    <style name="anim_pop">
+        <item name="android:windowEnterAnimation">@anim/pop_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit</item>
+        </style>
+
 </resources>

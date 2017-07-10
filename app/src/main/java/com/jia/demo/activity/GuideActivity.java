@@ -19,6 +19,7 @@ import android.widget.TextView;
 import com.jia.demo.MainActivity;
 import com.jia.demo.R;
 import com.jia.demo.base.recyclerview.JsAbsAdapter;
+import com.jia.demo.utils.SharedPreferencesUtils;
 
 /**
  * Describtion: 引导页
@@ -44,6 +45,13 @@ public class GuideActivity extends Activity {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }
         setContentView(R.layout.activity_guide);
+
+        // 不是第一次打开，就直接跳转主页面
+        if (!SharedPreferencesUtils.getData(GuideActivity.this, "isFirstOpen", false)) {
+            startActivity(new Intent(GuideActivity.this, MainActivity.class));
+        }
+        SharedPreferencesUtils.saveData(GuideActivity.this,"isFirstOpen",true);
+
         mRootLayout = (RelativeLayout) findViewById(R.id.rl_root);
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         mArgbEvaluator = new ArgbEvaluator();

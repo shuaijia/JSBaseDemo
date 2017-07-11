@@ -25,12 +25,6 @@ public class StatusBarUtils {
 
                 window.setStatusBarColor(activity.getResources().getColor(colorResId));
 
-
-
-                //底部导航栏
-
-                //window.setNavigationBarColor(activity.getResources().getColor(colorResId));
-
             }
 
         } catch (Exception e) {
@@ -54,12 +48,6 @@ public class StatusBarUtils {
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
 
                 window.setStatusBarColor(dialog.getContext().getResources().getColor(colorResId));
-
-
-
-                //底部导航栏
-
-                //window.setNavigationBarColor(activity.getResources().getColor(colorResId));
 
             }
 

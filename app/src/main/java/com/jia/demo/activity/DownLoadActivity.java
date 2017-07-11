@@ -3,9 +3,8 @@ package com.jia.demo.activity;
 import android.content.Intent;
 import android.util.Log;
 
+import com.jia.demo.R;
 import com.jia.demo.base.BaseActivity;
-import com.jia.demo.download.DownloadUtils;
-import com.jia.demo.download.JsDownloadListener;
 
 import java.net.HttpURLConnection;
 
@@ -20,7 +19,7 @@ public class DownLoadActivity extends BaseActivity {
 
     @Override
     public int setLayoutId() {
-        return 0;
+        return R.layout.activity_download;
     }
 
     @Override
@@ -35,57 +34,7 @@ public class DownLoadActivity extends BaseActivity {
 
     @Override
     public void initData() {
-        DownloadUtils.getInstance().download(mContext, "url", "path", new JsDownloadListener() {
-            @Override
-            public void onStart(long startLocation) {
-                Log.e(TAG, "onStart: "+startLocation );
-            }
 
-            @Override
-            public void onResume(long resumeLocation) {
-                Log.e(TAG, "onResume: "+resumeLocation);
-            }
-
-            @Override
-            public void onStop(long stopLocation) {
-                Log.e(TAG, "onStop: "+stopLocation);
-            }
-
-            @Override
-            public void onComplete() {
-                Log.e(TAG, "onComplete: ");
-            }
-
-            @Override
-            public void onFail(String errorInfo) {
-                Log.e(TAG, "onFail: ");
-            }
-
-            @Override
-            public void onCancle() {
-                Log.e(TAG, "onCancle: ");
-            }
-
-            @Override
-            public void onPreDownload(HttpURLConnection conn) {
-                Log.e(TAG, "onPreDownload: ");
-            }
-
-            @Override
-            public void onProgress(int currentLocation) {
-                Log.e(TAG, "onProgress: "+ currentLocation);
-            }
-
-            @Override
-            public void onChildComplete(long finishLocation) {
-                Log.e(TAG, "onChildComplete: ");
-            }
-
-            @Override
-            public void onChildResume(long resumeLocation) {
-                Log.e(TAG, "onChildResume: ");
-            }
-        });
     }
 
     @Override

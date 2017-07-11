@@ -29,6 +29,7 @@ import com.jia.demo.activity.RecyclerViewActivity;
 import com.jia.demo.activity.RetrofitActivity;
 import com.jia.demo.activity.RxJavaActivity;
 import com.jia.demo.activity.SVGActivity;
+import com.jia.demo.activity.StatusBarActivity;
 import com.jia.demo.activity.TagActivity;
 import com.jia.demo.activity.VerticalLooperViewActivity;
 import com.jia.demo.activity.ViewPagerActivity;
@@ -135,6 +136,9 @@ public class MainActivity extends Activity {
                 case 24:
                     login.setNote("封装PopupWindow");
                     break;
+                case 25:
+                    login.setNote("沉浸式状态栏");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -233,6 +237,9 @@ public class MainActivity extends Activity {
                         break;
                     case 24:
                         startActivity(new Intent(mContext, PopupWindowActivity.class));
+                        break;
+                    case 25:
+                        startActivity(new Intent(mContext, StatusBarActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

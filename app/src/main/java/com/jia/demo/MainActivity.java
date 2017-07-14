@@ -18,6 +18,7 @@ import com.jia.demo.activity.DBActivity;
 import com.jia.demo.activity.HuaLangActivity;
 import com.jia.demo.activity.IndexActivity;
 import com.jia.demo.activity.JavaActivity;
+import com.jia.demo.activity.LifeMethodActivity;
 import com.jia.demo.activity.MaterialDesignActivity;
 import com.jia.demo.activity.DownLoadActivity;
 import com.jia.demo.activity.NotificationActivity;
@@ -139,6 +140,9 @@ public class MainActivity extends Activity {
                 case 25:
                     login.setNote("沉浸式状态栏");
                     break;
+                case 26:
+                    login.setNote("Activity生命周期");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -240,6 +244,9 @@ public class MainActivity extends Activity {
                         break;
                     case 25:
                         startActivity(new Intent(mContext, StatusBarActivity.class));
+                        break;
+                    case 26:
+                        startActivity(new Intent(mContext, LifeMethodActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

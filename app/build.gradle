@@ -64,19 +64,18 @@ dependencies {
     compile 'org.greenrobot:greendao:3.0.1'
     compile 'org.greenrobot:greendao-generator:3.0.0'
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
-
-
     //导入retrofit，的版本号必须一样
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'io.reactivex:rxandroid:1.1.0'
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
-
     // path动画库
     compile 'com.github.mcxtzhang:PathAnimView:V1.0.0'
-
     // 自己封装的运行时权限库
     compile 'com.github.shuaijia:JsPermission:v1.0'
+    //    compile 'com.github.barteksc:android-pdf-viewer:2.7.0-beta.1'
+    compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+//    compile files('libs/slf4j-android-1.5.8.jar')
 }
 

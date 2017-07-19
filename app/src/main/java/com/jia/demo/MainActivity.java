@@ -23,6 +23,7 @@ import com.jia.demo.activity.MaterialDesignActivity;
 import com.jia.demo.activity.DownLoadActivity;
 import com.jia.demo.activity.NotificationActivity;
 import com.jia.demo.activity.OkHttpActivity;
+import com.jia.demo.activity.PDFActivity;
 import com.jia.demo.activity.ParallaxActivity;
 import com.jia.demo.activity.PathAnimationActivity;
 import com.jia.demo.activity.PopupWindowActivity;
@@ -39,6 +40,7 @@ import com.jia.demo.adapter.MyAdapter;
 import com.jia.demo.base.BaseWebViewActivity;
 import com.jia.demo.base.recyclerview.JsOnItemClickListener;
 import com.jia.demo.bean.Login;
+import com.jia.demo.reader.StartScreen;
 import com.jia.demo.utils.StatusBarUtils;
 
 import java.util.ArrayList;
@@ -142,6 +144,12 @@ public class MainActivity extends Activity {
                     break;
                 case 26:
                     login.setNote("Activity生命周期");
+                    break;
+                case 27:
+                    login.setNote("PDF阅读器");
+                    break;
+                case 28:
+                    login.setNote("EPUB阅读器");
                     break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
@@ -247,6 +255,12 @@ public class MainActivity extends Activity {
                         break;
                     case 26:
                         startActivity(new Intent(mContext, LifeMethodActivity.class));
+                        break;
+                    case 27:
+                        startActivity(new Intent(mContext, PDFActivity.class));
+                        break;
+                    case 28:
+                        startActivity(new Intent(mContext, StartScreen.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

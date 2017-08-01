@@ -71,14 +71,16 @@
         <activity android:name=".activity.WaterWaveProgressActivity" />
         <activity android:name=".activity.NotificationActivity" />
         <activity android:name=".activity.PopupWindowActivity" />
-        <activity android:name=".activity.PDFActivity"/>
-        <activity android:name=".reader.StartScreen"/>
+        <activity android:name=".activity.PDFActivity" />
+        <activity android:name=".reader.StartScreen" />
         <activity
             android:name=".activity.StatusBarActivity"
             android:theme="@style/TranslucentTheme" />
-        <activity android:name=".activity.LifeMethodActivity"
-            android:launchMode="singleTask"/>
-        <activity android:name=".activity.LifeMethodTwoActivity"></activity>
+        <activity
+            android:name=".activity.LifeMethodActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.LifeMethodTwoActivity" />
+        <activity android:name=".activity.LifeMehodThreeActivity"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,19 +7,25 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jia.demo.activity.LifeMethodTwoActivity">
+    android:orientation="vertical"
+    tools:context="com.jia.demo.activity.LifeMehodThreeActivity">
 
     <TextView
-        android:id="@+id/tv_lifecycle_b"
+        android:id="@+id/tv_three_life_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="返回前一页"/>
+        android:text="第一个fragment"/>
 
     <TextView
-        android:id="@+id/tv_lifecycle_b2"
-        android:layout_below="@id/tv_lifecycle_b"
+        android:id="@+id/tv_three_life_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="下一页 activity与fragment生命周期"/>
+        android:layout_marginTop="20dp"
+        android:text="第二个fragment"/>
 
-</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_life_method"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+
+</LinearLayout>

@@ -17,6 +17,7 @@ import com.jia.demo.activity.HtmlCacheActivity;
 import com.jia.demo.activity.DBActivity;
 import com.jia.demo.activity.HuaLangActivity;
 import com.jia.demo.activity.IndexActivity;
+import com.jia.demo.activity.ItemAnimatorActivity;
 import com.jia.demo.activity.JavaActivity;
 import com.jia.demo.activity.LifeMethodActivity;
 import com.jia.demo.activity.MaterialDesignActivity;
@@ -149,7 +150,7 @@ public class MainActivity extends Activity {
                     login.setNote("PDF阅读器");
                     break;
                 case 28:
-                    login.setNote("EPUB阅读器");
+                    login.setNote("RecyclerView的item动画");
                     break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
@@ -260,7 +261,7 @@ public class MainActivity extends Activity {
                         startActivity(new Intent(mContext, PDFActivity.class));
                         break;
                     case 28:
-                        startActivity(new Intent(mContext, StartScreen.class));
+                        startActivity(new Intent(mContext, ItemAnimatorActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

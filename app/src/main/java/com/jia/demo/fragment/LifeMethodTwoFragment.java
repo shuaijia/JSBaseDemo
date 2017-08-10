@@ -19,11 +19,6 @@ import android.widget.TextView;
 public class LifeMethodTwoFragment extends Fragment {
     private static final String TAG = "LifeMethod";
 
-    public LifeMethodTwoFragment() {
-        super();
-        Log.e(TAG, "LifeMethodTwoFragment: " );
-    }
-
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -70,7 +65,6 @@ public class LifeMethodTwoFragment extends Fragment {
         Log.e(TAG, "onResume: "+" fragment" +" B");
     }
 
-
     @Override
     public void onPause() {
         super.onPause();
@@ -99,6 +93,11 @@ public class LifeMethodTwoFragment extends Fragment {
     public void onDetach() {
         super.onDetach();
         Log.e(TAG, "onDetach: "+" fragment" +" B");
+    }
+
+    public LifeMethodTwoFragment() {
+        super();
+        Log.e(TAG, "LifeMethodTwoFragment: " );
     }
 
 

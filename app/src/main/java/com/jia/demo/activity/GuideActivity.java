@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 
 import com.jia.demo.MainActivity;
 import com.jia.demo.R;
+import com.jia.demo.base.BaseApplication;
 import com.jia.demo.base.recyclerview.JsAbsAdapter;
 import com.jia.demo.utils.SharedPreferencesUtils;
 
@@ -41,6 +43,7 @@ public class GuideActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.e("Tag", "启动时间: "+(System.currentTimeMillis()- BaseApplication.getInstances().getTime()) );
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }

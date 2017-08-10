@@ -3,8 +3,6 @@ package com.jia.demo.activity;
 import android.app.Activity;
 import android.os.Bundle;
 
-import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;

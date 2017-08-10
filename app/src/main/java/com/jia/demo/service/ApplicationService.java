@@ -1,55 +1,31 @@
-package com.jia.demo.base;
+package com.jia.demo.service;
 
-import android.app.Application;
-import android.content.Context;
+import android.app.IntentService;
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.jia.demo.db.domain.DaoMaster;
 import com.jia.demo.db.domain.DaoSession;
 
-
 /**
- * Describtion:
- * Created by jia on 2017/4/5 0005.
+ * Describtion: App启动异步操作
+ * Created by jia on 2017/8/10.
  * 人之所以能，是相信能
  */
-
-/**
- * DaoMaster:
- * DaoMaster保存了数据库对象和管理DAO类的classes，
- * 其提供了一些静态方法创建和删除表，内部类OpenHelper
- * 和DevOpenHelper 实现了SQLiteOpenHelper并创建数据库的框架。
- * DaoSession：
- * 管理所有可用的DAO对象，可以通过getter方法获得。DaoSession
- * 还提供了一些通用的持久性方法比如插入、加载、更新,刷新和删除实体。
- * DAOs:
- * 数据访问对象，每一个实体类都有对应的greenDAO对象。
- * Entities：
- * 实体类对象
- */
-public class BaseApplication extends Application {
+public class ApplicationService extends IntentService {
 
     private DaoMaster.DevOpenHelper mHelper;
     private SQLiteDatabase db;
     private DaoMaster mDaoMaster;
     private DaoSession mDaoSession;
-    public static BaseApplication instances;
 
-    private static Context mContext;
-
-    public static BaseApplication getInstances(){
-        return instances;
+    public ApplicationService(String name) {
+        super(name);
     }
 
     @Override
-    public void onCreate() {
-        super.onCreate();
-        instances = this;
-
-        mContext=this;
-
+    protected void onHandleIntent(Intent intent) {
         setGreenDaoConfig();
-
     }
 
     /**
@@ -72,9 +48,5 @@ public class BaseApplication extends Application {
     }
     public SQLiteDatabase getDb() {
         return db;
-    }
-
-    public static Context getApplicationcontext(){
-        return mContext;
     }
 }

@@ -41,7 +41,6 @@ import com.jia.demo.adapter.MyAdapter;
 import com.jia.demo.base.BaseWebViewActivity;
 import com.jia.demo.base.recyclerview.JsOnItemClickListener;
 import com.jia.demo.bean.Login;
-import com.jia.demo.reader.StartScreen;
 import com.jia.demo.utils.StatusBarUtils;
 
 import java.util.ArrayList;
@@ -62,7 +61,7 @@ public class MainActivity extends Activity {
 
 //      ===================BaseAdapter测试=====================================
         List<Login> list = new ArrayList<>();
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 40; i++) {
             Login login = new Login();
             switch (i) {
                 case 0:

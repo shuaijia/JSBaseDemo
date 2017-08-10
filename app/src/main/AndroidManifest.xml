@@ -72,7 +72,6 @@
         <activity android:name=".activity.NotificationActivity" />
         <activity android:name=".activity.PopupWindowActivity" />
         <activity android:name=".activity.PDFActivity" />
-        <activity android:name=".reader.StartScreen" />
         <activity
             android:name=".activity.StatusBarActivity"
             android:theme="@style/TranslucentTheme" />

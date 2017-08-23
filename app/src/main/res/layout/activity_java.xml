@@ -6,5 +6,7 @@
     <TextView
         android:id="@+id/tv_java"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="100dp"
+        android:text="操作"
+        android:background="#db1252"/>
 </LinearLayout>

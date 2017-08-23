@@ -43,7 +43,6 @@ public class GuideActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.e("Tag", "启动时间: "+(System.currentTimeMillis()- BaseApplication.getInstances().getTime()) );
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         }

@@ -32,6 +32,7 @@ import com.jia.demo.activity.RecyclerViewActivity;
 import com.jia.demo.activity.RetrofitActivity;
 import com.jia.demo.activity.RxJavaActivity;
 import com.jia.demo.activity.SVGActivity;
+import com.jia.demo.activity.ScaleTypeActivity;
 import com.jia.demo.activity.StatusBarActivity;
 import com.jia.demo.activity.TagActivity;
 import com.jia.demo.activity.VerticalLooperViewActivity;
@@ -151,6 +152,9 @@ public class MainActivity extends Activity {
                 case 28:
                     login.setNote("RecyclerView的item动画");
                     break;
+                case 29:
+                    login.setNote("ImageView的ScaleType");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -261,6 +265,9 @@ public class MainActivity extends Activity {
                         break;
                     case 28:
                         startActivity(new Intent(mContext, ItemAnimatorActivity.class));
+                        break;
+                    case 29:
+                        startActivity(new Intent(mContext, ScaleTypeActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

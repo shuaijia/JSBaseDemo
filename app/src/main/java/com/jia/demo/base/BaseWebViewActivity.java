@@ -75,12 +75,13 @@ public class BaseWebViewActivity extends Activity {
         wSet.setLoadWithOverviewMode(true);
         //支持缩放
         wSet.setSupportZoom(true);
+        wSet.setBuiltInZoomControls(true);
         //设置数据格式，这样能在一定程度上节省资源
         wSet.setDefaultTextEncodingName("UTF-8");
         wSet.setRenderPriority(WebSettings.RenderPriority.HIGH);
         //隐藏原生缩放控件
-        wSet.setDisplayZoomControls(false);
-        wSet.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
+//        wSet.setDisplayZoomControls(false);
+//        wSet.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
 
         //设置 缓存模式
         wSet.setCacheMode(WebSettings.LOAD_DEFAULT);
@@ -102,7 +103,7 @@ public class BaseWebViewActivity extends Activity {
 
         wSet.setAllowContentAccess(true);
 
-        webView.loadUrl("http://192.168.45.162:8020/app/new_file.html");
+        webView.loadUrl("http://www.oschina.net/question/54100_34836");
 //        webView.loadUrl(url);
 //        "file:///mnt/sdcard/database/taobao.html"
         /**

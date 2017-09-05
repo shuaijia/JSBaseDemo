@@ -81,7 +81,7 @@
         <activity android:name=".activity.LifeMethodTwoActivity" />
         <activity android:name=".activity.LifeMehodThreeActivity" />
         <activity android:name=".activity.ItemAnimatorActivity" />
-        <activity android:name=".activity.ScaleTypeActivity"></activity>
+        <activity android:name=".activity.ScaleTypeActivity" />
     </application>
 
 </manifest>

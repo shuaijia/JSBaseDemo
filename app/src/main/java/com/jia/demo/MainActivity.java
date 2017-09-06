@@ -20,6 +20,7 @@ import com.jia.demo.activity.IndexActivity;
 import com.jia.demo.activity.ItemAnimatorActivity;
 import com.jia.demo.activity.JavaActivity;
 import com.jia.demo.activity.LifeMethodActivity;
+import com.jia.demo.activity.MILoadingActivity;
 import com.jia.demo.activity.MaterialDesignActivity;
 import com.jia.demo.activity.DownLoadActivity;
 import com.jia.demo.activity.NotificationActivity;
@@ -155,6 +156,9 @@ public class MainActivity extends Activity {
                 case 29:
                     login.setNote("ImageView的ScaleType");
                     break;
+                case 30:
+                    login.setNote("仿小米视频加载中动画");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -268,6 +272,9 @@ public class MainActivity extends Activity {
                         break;
                     case 29:
                         startActivity(new Intent(mContext, ScaleTypeActivity.class));
+                        break;
+                    case 30:
+                        startActivity(new Intent(mContext, MILoadingActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

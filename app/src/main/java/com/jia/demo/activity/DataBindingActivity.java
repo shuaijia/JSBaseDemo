@@ -32,7 +32,7 @@ public class DataBindingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        viewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        viewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_databinding);
 
         tv_databinding = (TextView) findViewById(R.id.tv_databinding);
         bt_databinding = (Button) findViewById(R.id.bt_databinding);

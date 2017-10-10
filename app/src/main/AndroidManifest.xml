@@ -82,7 +82,8 @@
         <activity android:name=".activity.LifeMehodThreeActivity" />
         <activity android:name=".activity.ItemAnimatorActivity" />
         <activity android:name=".activity.ScaleTypeActivity" />
-        <activity android:name=".activity.MILoadingActivity"></activity>
+        <activity android:name=".activity.MILoadingActivity" />
+        <activity android:name=".activity.PasswordEditTextActivity"></activity>
     </application>
 
 </manifest>

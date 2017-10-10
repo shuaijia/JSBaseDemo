@@ -31,4 +31,16 @@
     <declare-styleable name="Themes">
         <attr name="numberProgressBarStyle" format="reference"/>
     </declare-styleable>
+
+    <!--密码输入框-->
+    <declare-styleable name="JsPasswordInputView">
+        <attr name="jsBorderColor" format="color"/>
+        <attr name="jsBorderWidth" format="dimension"/>
+        <attr name="jsBorderRadius" format="dimension"/>
+        <attr name="jsPasswordColor" format="color"/>
+        <attr name="jsPasswordWidth" format="dimension"/>
+        <attr name="jsPasswordRadius" format="dimension"/>
+        <attr name="jsPasswordLength" format="integer"/>
+    </declare-styleable>
+
 </resources>

@@ -27,6 +27,7 @@ import com.jia.demo.activity.NotificationActivity;
 import com.jia.demo.activity.OkHttpActivity;
 import com.jia.demo.activity.PDFActivity;
 import com.jia.demo.activity.ParallaxActivity;
+import com.jia.demo.activity.PasswordEditTextActivity;
 import com.jia.demo.activity.PathAnimationActivity;
 import com.jia.demo.activity.PopupWindowActivity;
 import com.jia.demo.activity.RecyclerViewActivity;
@@ -159,6 +160,9 @@ public class MainActivity extends Activity {
                 case 30:
                     login.setNote("仿小米视频加载中动画");
                     break;
+                case 31:
+                    login.setNote("密码输入框");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -275,6 +279,9 @@ public class MainActivity extends Activity {
                         break;
                     case 30:
                         startActivity(new Intent(mContext, MILoadingActivity.class));
+                        break;
+                    case 31:
+                        startActivity(new Intent(mContext, PasswordEditTextActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

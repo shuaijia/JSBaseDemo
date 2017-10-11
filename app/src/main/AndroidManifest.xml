@@ -83,7 +83,12 @@
         <activity android:name=".activity.ItemAnimatorActivity" />
         <activity android:name=".activity.ScaleTypeActivity" />
         <activity android:name=".activity.MILoadingActivity" />
-        <activity android:name=".activity.PasswordEditTextActivity"></activity>
+        <activity android:name=".activity.PasswordEditTextActivity" />
+        <activity android:name=".activity.enter.animation.AnimMainActivity" />
+        <activity android:name=".activity.enter.animation.AnimDefaultActivity" />
+        <activity android:name=".activity.enter.animation.AnimExplodeActivity" />
+        <activity android:name=".activity.enter.animation.AnimSlideActivity" />
+        <activity android:name=".activity.enter.animation.AnimShareViewActivity"></activity>
     </application>
 
 </manifest>

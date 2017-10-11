@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jia.demo.activity.enter.animation.AnimMainActivity">
+
+    <TableLayout
+        android:id="@+id/table1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:shrinkColumns="0,1,2">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bt_anim_default"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ac45d2"
+                android:text="默认"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/bt_anim_explode"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ac45d2"
+                android:text="explode"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/bt_anim_slide"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#ac45d2"
+                android:text="slide"
+                android:textColor="#fff" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bt_anim_share_view"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:background="#03A9F4"
+                android:text="共享View"
+                android:textColor="#fff"
+                android:transitionName="shareView"/>
+
+            <Button
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:text="我"
+                android:textColor="#fff" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:background="#795548"
+                android:text="该列可收缩"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#CDDC39"
+                android:text="我被"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:background="#03A9F4"
+                android:text="我被隐藏了"
+                android:textColor="#fff" />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</RelativeLayout>

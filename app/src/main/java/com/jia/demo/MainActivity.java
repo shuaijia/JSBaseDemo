@@ -40,6 +40,7 @@ import com.jia.demo.activity.TagActivity;
 import com.jia.demo.activity.VerticalLooperViewActivity;
 import com.jia.demo.activity.ViewPagerActivity;
 import com.jia.demo.activity.WaterWaveProgressActivity;
+import com.jia.demo.activity.enter.animation.AnimMainActivity;
 import com.jia.demo.adapter.MyAdapter;
 import com.jia.demo.base.BaseWebViewActivity;
 import com.jia.demo.base.recyclerview.JsOnItemClickListener;
@@ -163,6 +164,9 @@ public class MainActivity extends Activity {
                 case 31:
                     login.setNote("密码输入框");
                     break;
+                case 32:
+                    login.setNote("Activity的跳转动画");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -282,6 +286,9 @@ public class MainActivity extends Activity {
                         break;
                     case 31:
                         startActivity(new Intent(mContext, PasswordEditTextActivity.class));
+                        break;
+                    case 32:
+                        startActivity(new Intent(mContext, AnimMainActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

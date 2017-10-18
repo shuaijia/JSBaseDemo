@@ -30,6 +30,7 @@ import com.jia.demo.activity.ParallaxActivity;
 import com.jia.demo.activity.PasswordEditTextActivity;
 import com.jia.demo.activity.PathAnimationActivity;
 import com.jia.demo.activity.PopupWindowActivity;
+import com.jia.demo.activity.RadarActivity;
 import com.jia.demo.activity.RecyclerViewActivity;
 import com.jia.demo.activity.RetrofitActivity;
 import com.jia.demo.activity.RxJavaActivity;
@@ -171,6 +172,9 @@ public class MainActivity extends Activity {
                 case 33:
                     login.setNote("泰森多边形图");
                     break;
+                case 34:
+                    login.setNote("雷达分析图");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -296,6 +300,9 @@ public class MainActivity extends Activity {
                         break;
                     case 33:
                         startActivity(new Intent(mContext, VoronoiActivity.class));
+                        break;
+                    case 34:
+                        startActivity(new Intent(mContext, RadarActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

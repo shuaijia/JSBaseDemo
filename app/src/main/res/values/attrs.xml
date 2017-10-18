@@ -43,4 +43,19 @@
         <attr name="jsPasswordLength" format="integer"/>
     </declare-styleable>
 
+    <!--雷达表-->
+    <declare-styleable name="RadarChart">
+        <!-- 蜘蛛网线条宽度 -->
+        <attr name="radarLineWidth" format="dimension"/>
+        <!-- 蜘蛛网颜色 -->
+        <attr name="radarLineColor" format="color"/>
+        <!-- 半径分成N段-->
+        <attr name="radarLineSegments" format="integer"/>
+        <!-- 文字颜色 -->
+        <attr name="radarTextColor" format="color"/>
+        <!-- 文字字体大小-->
+        <attr name="radarTextSize" format="integer"/>
+        <!-- 数据展示覆盖区域颜色 -->
+        <attr name="radarCoverColor" format="color"/>
+    </declare-styleable>
 </resources>

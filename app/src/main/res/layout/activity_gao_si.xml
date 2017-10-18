@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.jia.demo.activity.VoronoiActivity">
+
+    <quatja.com.vorolay.VoronoiView
+        android:id="@+id/voronoi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:border_color="#f5f5f5"
+        custom:border_round="false"
+        custom:border_width="5"    />
+
+</RelativeLayout>

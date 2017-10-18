@@ -88,7 +88,8 @@
         <activity android:name=".activity.enter.animation.AnimDefaultActivity" />
         <activity android:name=".activity.enter.animation.AnimExplodeActivity" />
         <activity android:name=".activity.enter.animation.AnimSlideActivity" />
-        <activity android:name=".activity.enter.animation.AnimShareViewActivity"></activity>
+        <activity android:name=".activity.enter.animation.AnimShareViewActivity" />
+        <activity android:name=".activity.VoronoiActivity"/>
     </application>
 
 </manifest>

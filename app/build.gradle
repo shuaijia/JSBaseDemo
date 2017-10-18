@@ -1,5 +1,5 @@
-// Model都有各自的build.gradle，这里声明该Model作为主项目，常见的还有另一个取值：
-// apply plugin: 'com.android.library' 声明该Model作为库使用
+// Module都有各自的build.gradle，这里声明该Module作为主项目，常见的还有另一个取值：
+// apply plugin: 'com.android.library' 声明该Module作为库使用
 apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
 
@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.jia.demo"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -76,6 +76,8 @@ dependencies {
     compile 'com.github.shuaijia:JsPermission:v1.0'
     //    compile 'com.github.barteksc:android-pdf-viewer:2.7.0-beta.1'
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
-    compile files('libs/slf4j-android-1.5.8.jar')
+
+    // 泰森多边形
+    compile 'com.github.Quatja:Vorolay:1.0.1'
 }
 

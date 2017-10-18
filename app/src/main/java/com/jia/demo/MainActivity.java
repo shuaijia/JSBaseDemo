@@ -39,6 +39,7 @@ import com.jia.demo.activity.StatusBarActivity;
 import com.jia.demo.activity.TagActivity;
 import com.jia.demo.activity.VerticalLooperViewActivity;
 import com.jia.demo.activity.ViewPagerActivity;
+import com.jia.demo.activity.VoronoiActivity;
 import com.jia.demo.activity.WaterWaveProgressActivity;
 import com.jia.demo.activity.enter.animation.AnimMainActivity;
 import com.jia.demo.adapter.MyAdapter;
@@ -167,6 +168,9 @@ public class MainActivity extends Activity {
                 case 32:
                     login.setNote("Activity的跳转动画");
                     break;
+                case 33:
+                    login.setNote("泰森多边形图");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -289,6 +293,9 @@ public class MainActivity extends Activity {
                         break;
                     case 32:
                         startActivity(new Intent(mContext, AnimMainActivity.class));
+                        break;
+                    case 33:
+                        startActivity(new Intent(mContext, VoronoiActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

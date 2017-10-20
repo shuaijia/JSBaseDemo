@@ -79,5 +79,8 @@ dependencies {
 
     // 泰森多边形
     compile 'com.github.Quatja:Vorolay:1.0.1'
+
+    // 相机库
+    compile 'com.github.florent37:camerafragment:1.0.7'
 }
 

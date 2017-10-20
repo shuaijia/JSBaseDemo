@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.CircularProgressActivity;
 import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
@@ -175,6 +176,9 @@ public class MainActivity extends Activity {
                 case 34:
                     login.setNote("雷达分析图");
                     break;
+                case 35:
+                    login.setNote("相机相册库");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -303,6 +307,9 @@ public class MainActivity extends Activity {
                         break;
                     case 34:
                         startActivity(new Intent(mContext, RadarActivity.class));
+                        break;
+                    case 35:
+                        startActivity(new Intent(mContext, CameraActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

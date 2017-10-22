@@ -11,7 +11,7 @@ import com.google.android.flexbox.FlexboxLayout;
 import com.jia.demo.R;
 
 /**
- * Describtion: 标签 页
+ * Describtion: 标签页
  * Created by jia on 2017/3/22 0022.
  * 人之所以能，是相信能
  */

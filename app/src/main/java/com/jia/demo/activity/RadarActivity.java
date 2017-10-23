@@ -26,12 +26,12 @@ public class RadarActivity extends Activity {
 
         List<JsRadarChart.RadarEntry> list = new ArrayList<>();
 
-        JsRadarChart.RadarEntry entry1 = new JsRadarChart.RadarEntry("力量", 100);
-        JsRadarChart.RadarEntry entry2 = new JsRadarChart.RadarEntry("经验", 100);
-        JsRadarChart.RadarEntry entry3 = new JsRadarChart.RadarEntry("防守", 100);
-        JsRadarChart.RadarEntry entry4 = new JsRadarChart.RadarEntry("发球", 100);
-        JsRadarChart.RadarEntry entry5 = new JsRadarChart.RadarEntry("技术", 100);
-        JsRadarChart.RadarEntry entry6 = new JsRadarChart.RadarEntry("速度", 100);
+        JsRadarChart.RadarEntry entry1 = new JsRadarChart.RadarEntry("力量", 80);
+        JsRadarChart.RadarEntry entry2 = new JsRadarChart.RadarEntry("经验", 60);
+        JsRadarChart.RadarEntry entry3 = new JsRadarChart.RadarEntry("防守", 50);
+        JsRadarChart.RadarEntry entry4 = new JsRadarChart.RadarEntry("发球", 77);
+        JsRadarChart.RadarEntry entry5 = new JsRadarChart.RadarEntry("技术", 92);
+        JsRadarChart.RadarEntry entry6 = new JsRadarChart.RadarEntry("速度", 60);
 
         list.add(entry1);
         list.add(entry2);

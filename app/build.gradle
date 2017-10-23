@@ -76,11 +76,11 @@ dependencies {
     compile 'com.github.shuaijia:JsPermission:v1.0'
     //    compile 'com.github.barteksc:android-pdf-viewer:2.7.0-beta.1'
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
-
     // 泰森多边形
     compile 'com.github.Quatja:Vorolay:1.0.1'
-
     // 相机库
     compile 'com.github.florent37:camerafragment:1.0.7'
+    // 腾讯浏览服务
+    compile files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
 }
 

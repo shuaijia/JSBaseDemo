@@ -82,5 +82,8 @@ dependencies {
     compile 'com.github.florent37:camerafragment:1.0.7'
     // 腾讯浏览服务
     compile files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+
+    // 图片视频选择器
+//    compile 'com.github.guoxiaoxing.phoenix:phoenix-ui:0.0.12'
 }
 

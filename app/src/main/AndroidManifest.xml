@@ -92,7 +92,9 @@
         <activity android:name=".activity.VoronoiActivity" />
         <activity android:name=".activity.RadarActivity" />
         <activity android:name=".activity.CameraActivity" />
-        <activity android:name=".activity.TBSActivity"></activity>
+        <activity android:name=".activity.TBSActivity" />
+        <activity android:name=".activity.MediaSelectActivity" />
+        <activity android:name=".activity.LyricViewActivity"/>
     </application>
 
 </manifest>

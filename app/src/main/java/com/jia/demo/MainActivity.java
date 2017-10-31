@@ -21,9 +21,11 @@ import com.jia.demo.activity.IndexActivity;
 import com.jia.demo.activity.ItemAnimatorActivity;
 import com.jia.demo.activity.JavaActivity;
 import com.jia.demo.activity.LifeMethodActivity;
+import com.jia.demo.activity.LyricViewActivity;
 import com.jia.demo.activity.MILoadingActivity;
 import com.jia.demo.activity.MaterialDesignActivity;
 import com.jia.demo.activity.DownLoadActivity;
+import com.jia.demo.activity.MediaSelectActivity;
 import com.jia.demo.activity.NotificationActivity;
 import com.jia.demo.activity.OkHttpActivity;
 import com.jia.demo.activity.PDFActivity;
@@ -183,6 +185,12 @@ public class MainActivity extends Activity {
                 case 36:
                     login.setNote("腾讯浏览服务");
                     break;
+                case 37:
+                    login.setNote("图片视频选择");
+                    break;
+                case 38:
+                    login.setNote("歌词显示View");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -317,6 +325,12 @@ public class MainActivity extends Activity {
                         break;
                     case 36:
                         startActivity(new Intent(mContext, TBSActivity.class));
+                        break;
+                    case 37:
+                        startActivity(new Intent(mContext, MediaSelectActivity.class));
+                        break;
+                    case 38:
+                        startActivity(new Intent(mContext, LyricViewActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

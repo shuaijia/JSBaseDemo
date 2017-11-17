@@ -3,6 +3,7 @@ package com.jia.demo.retrofit;
 import android.content.Context;
 import android.util.Log;
 
+import com.jia.demo.bean.UserModel;
 import com.jia.demo.bean.ZQBanner;
 import com.jia.demo.bean.ZQLive;
 import com.jia.demo.bean.ZQLogin;
@@ -33,7 +34,7 @@ import rx.schedulers.Schedulers;
  */
 public class HttpMethod {
 
-    public static final String TAG="HttpMethod";
+    public static final String TAG = "HttpMethod";
 
     // 请求超时
     private static final int TIME_OUT = 5;
@@ -64,9 +65,9 @@ public class HttpMethod {
                 Response originalResponse = chain.proceed(chain.request());
                 //这里获取请求返回的cookie
                 if (!originalResponse.headers("Set-Cookie").isEmpty()) {
-                    if(originalResponse.headers("Set-Cookie").size()==2){
+                    if (originalResponse.headers("Set-Cookie").size() == 2) {
                         CookieUtils.COOKIE = originalResponse.headers("Set-Cookie").get(1);
-                        Log.e(TAG, "intercept: 保存cookie"+CookieUtils.COOKIE);
+                        Log.e(TAG, "intercept: 保存cookie" + CookieUtils.COOKIE);
                     }
                 }
                 return originalResponse;
@@ -78,12 +79,12 @@ public class HttpMethod {
             @Override
             public Response intercept(Chain chain) throws IOException {
                 Request.Builder builder = chain.request().newBuilder();
-
-                if(null!=CookieUtils.COOKIE){
+                builder.addHeader("Connection", "close");
+                if (null != CookieUtils.COOKIE) {
                     builder.addHeader("Cookie", CookieUtils.COOKIE);
-                    Log.e(TAG, "intercept: 添加cookie"+ CookieUtils.COOKIE);
-                }else{
-                    Log.e(TAG, "intercept: 添加空cookie" );
+                    Log.e(TAG, "intercept: 添加cookie" + CookieUtils.COOKIE);
+                } else {
+                    Log.e(TAG, "intercept: 添加空cookie");
                 }
 
                 return chain.proceed(builder.build());
@@ -206,9 +207,10 @@ public class HttpMethod {
 
     /**
      * 获取推荐数据
+     *
      * @param subscriber
      */
-    public void getTuijian(ProgressSubscriber<ZQTuijian> subscriber){
+    public void getTuijian(ProgressSubscriber<ZQTuijian> subscriber) {
         service.getTuijian()
                 .map(new HttpResultFunc<ZQTuijian>())
                 .subscribeOn(Schedulers.io())

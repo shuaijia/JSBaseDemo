@@ -21,11 +21,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 /**
  * Describtion: Retrofit界面
@@ -57,7 +54,9 @@ public class RetrofitActivity extends Activity {
 
 //        loginNew();
 
-        getTuijian();
+//        getTuijian();
+
+        fengzhuangRetrofitRxjava();
     }
 
     /**
@@ -90,36 +89,36 @@ public class RetrofitActivity extends Activity {
     /**
      * retrofit+rxjava
      */
-    private void callServerRxJava(){
-        // 创建retrofit对象
-        Retrofit retrofit=new Retrofit.Builder()
-                .baseUrl(UrlConfig.BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create()) // gson解析
-                .addCallAdapterFactory(RxJavaCallAdapterFactory.create()) // 支持rxjava
-                .build();
-
-        BaseService service= retrofit.create(BaseService.class);
-
-        service.loginWithRxjava("13693510929","123456")
-                .subscribeOn(Schedulers.io()) // 子线程执行
-                .observeOn(AndroidSchedulers.mainThread())  // 主线程回调
-                .subscribe(new Subscriber<ZQLogin>() {  // 回调
-                    @Override
-                    public void onCompleted() {
-                        Log.e(TAG, "onCompleted: ");
-                    }
-
-                    @Override
-                    public void onError(Throwable e) {
-                        Log.e(TAG, "onError: "+e.getMessage() );
-                    }
-
-                    @Override
-                    public void onNext(ZQLogin zqLogin) {
-                        Log.e(TAG, "onNext: "+zqLogin.toString() );
-                    }
-                });
-    }
+//    private void callServerRxJava(){
+//        // 创建retrofit对象
+//        Retrofit retrofit=new Retrofit.Builder()
+//                .baseUrl(UrlConfig.BASE_URL)
+//                .addConverterFactory(GsonConverterFactory.create()) // gson解析
+//                .addCallAdapterFactory(RxJavaCallAdapterFactory.create()) // 支持rxjava
+//                .build();
+//
+//        BaseService service= retrofit.create(BaseService.class);
+//
+//        service.loginWithRxjava("13693510929","123456")
+//                .subscribeOn(Schedulers.io()) // 子线程执行
+//                .observeOn(AndroidSchedulers.mainThread())  // 主线程回调
+//                .subscribe(new Subscriber<ZQLogin>() {  // 回调
+//                    @Override
+//                    public void onCompleted() {
+//                        Log.e(TAG, "onCompleted: ");
+//                    }
+//
+//                    @Override
+//                    public void onError(Throwable e) {
+//                        Log.e(TAG, "onError: "+e.getMessage() );
+//                    }
+//
+//                    @Override
+//                    public void onNext(ZQLogin zqLogin) {
+//                        Log.e(TAG, "onNext: "+zqLogin.toString() );
+//                    }
+//                });
+//    }
 
     /**
      * 封装retrofit+rxjava

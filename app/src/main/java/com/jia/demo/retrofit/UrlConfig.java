@@ -10,6 +10,6 @@ public class UrlConfig {
     /**
      * base url
      */
-    public static final String BASE_URL="http://hzph.p.webtrn.cn:80/";
+    public static final String BASE_URL = "http://hzph.p.webtrn.cn:80/";
 
 }

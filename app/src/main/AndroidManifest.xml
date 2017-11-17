@@ -94,7 +94,9 @@
         <activity android:name=".activity.CameraActivity" />
         <activity android:name=".activity.TBSActivity" />
         <activity android:name=".activity.MediaSelectActivity" />
-        <activity android:name=".activity.LyricViewActivity"/>
+        <activity android:name=".activity.LyricViewActivity" />
+        <activity android:name=".activity.NestedScrollingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
     </application>
 
 </manifest>

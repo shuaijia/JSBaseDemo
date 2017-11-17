@@ -26,6 +26,7 @@ import com.jia.demo.activity.MILoadingActivity;
 import com.jia.demo.activity.MaterialDesignActivity;
 import com.jia.demo.activity.DownLoadActivity;
 import com.jia.demo.activity.MediaSelectActivity;
+import com.jia.demo.activity.NestedScrollingActivity;
 import com.jia.demo.activity.NotificationActivity;
 import com.jia.demo.activity.OkHttpActivity;
 import com.jia.demo.activity.PDFActivity;
@@ -64,14 +65,14 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StatusBarUtils.setWindowStatusBarColor(this,R.color.blue_a700);
+        StatusBarUtils.setWindowStatusBarColor(this, R.color.blue_a700);
         setContentView(R.layout.activity_main);
 
         mContext = MainActivity.this;
 
 //      ===================BaseAdapter测试=====================================
         List<Login> list = new ArrayList<>();
-        for (int i = 0; i < 40; i++) {
+        for (int i = 0; i < 50; i++) {
             Login login = new Login();
             switch (i) {
                 case 0:
@@ -190,6 +191,9 @@ public class MainActivity extends Activity {
                     break;
                 case 38:
                     login.setNote("歌词显示View");
+                    break;
+                case 39:
+                    login.setNote("NestedScrolling");
                     break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
@@ -331,6 +335,9 @@ public class MainActivity extends Activity {
                         break;
                     case 38:
                         startActivity(new Intent(mContext, LyricViewActivity.class));
+                        break;
+                    case 39:
+                        startActivity(new Intent(mContext, NestedScrollingActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

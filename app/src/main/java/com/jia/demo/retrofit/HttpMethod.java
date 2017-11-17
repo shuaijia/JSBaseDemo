@@ -1,9 +1,7 @@
 package com.jia.demo.retrofit;
 
-import android.content.Context;
 import android.util.Log;
 
-import com.jia.demo.bean.UserModel;
 import com.jia.demo.bean.ZQBanner;
 import com.jia.demo.bean.ZQLive;
 import com.jia.demo.bean.ZQLogin;

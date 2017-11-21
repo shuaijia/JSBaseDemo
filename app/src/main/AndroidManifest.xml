@@ -95,8 +95,13 @@
         <activity android:name=".activity.TBSActivity" />
         <activity android:name=".activity.MediaSelectActivity" />
         <activity android:name=".activity.LyricViewActivity" />
-        <activity android:name=".activity.NestedScrollingActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activity.NestedScrollingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.TantanActivity"
+            android:label="@string/title_activity_tantan"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

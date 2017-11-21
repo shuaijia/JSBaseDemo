@@ -43,6 +43,7 @@ import com.jia.demo.activity.ScaleTypeActivity;
 import com.jia.demo.activity.StatusBarActivity;
 import com.jia.demo.activity.TBSActivity;
 import com.jia.demo.activity.TagActivity;
+import com.jia.demo.activity.TantanActivity;
 import com.jia.demo.activity.VerticalLooperViewActivity;
 import com.jia.demo.activity.ViewPagerActivity;
 import com.jia.demo.activity.VoronoiActivity;
@@ -195,6 +196,9 @@ public class MainActivity extends Activity {
                 case 39:
                     login.setNote("NestedScrolling");
                     break;
+                case 40:
+                    login.setNote("仿探探滑动卡片");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -338,6 +342,9 @@ public class MainActivity extends Activity {
                         break;
                     case 39:
                         startActivity(new Intent(mContext, NestedScrollingActivity.class));
+                        break;
+                    case 40:
+                        startActivity(new Intent(mContext, TantanActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

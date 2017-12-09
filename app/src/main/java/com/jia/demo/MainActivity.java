@@ -13,6 +13,7 @@ import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.CircularProgressActivity;
 import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
+import com.jia.demo.activity.FabActivity;
 import com.jia.demo.activity.GlideImageViewActivity;
 import com.jia.demo.activity.HtmlCacheActivity;
 import com.jia.demo.activity.DBActivity;
@@ -199,6 +200,9 @@ public class MainActivity extends Activity {
                 case 40:
                     login.setNote("仿探探滑动卡片");
                     break;
+                case 41:
+                    login.setNote("菜单选择fab");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -345,6 +349,9 @@ public class MainActivity extends Activity {
                         break;
                     case 40:
                         startActivity(new Intent(mContext, TantanActivity.class));
+                        break;
+                    case 41:
+                        startActivity(new Intent(mContext, FabActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

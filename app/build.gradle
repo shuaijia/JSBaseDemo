@@ -85,5 +85,8 @@ dependencies {
 
     // 图片视频选择器
 //    compile 'com.github.guoxiaoxing.phoenix:phoenix-ui:0.0.12'
+
+    // FloatingActionButton
+    compile 'com.github.clans:fab:1.6.4'
 }
 

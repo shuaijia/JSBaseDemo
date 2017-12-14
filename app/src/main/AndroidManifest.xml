@@ -102,7 +102,10 @@
             android:name=".activity.TantanActivity"
             android:label="@string/title_activity_tantan"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.FabActivity"></activity>
+        <activity android:name=".activity.FabActivity" />
+        <activity
+            android:name=".activity.ScalpelActivity"
+            android:label="@string/title_activity_scalpel"></activity>
     </application>
 
 </manifest>

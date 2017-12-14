@@ -41,6 +41,7 @@ import com.jia.demo.activity.RetrofitActivity;
 import com.jia.demo.activity.RxJavaActivity;
 import com.jia.demo.activity.SVGActivity;
 import com.jia.demo.activity.ScaleTypeActivity;
+import com.jia.demo.activity.ScalpelActivity;
 import com.jia.demo.activity.StatusBarActivity;
 import com.jia.demo.activity.TBSActivity;
 import com.jia.demo.activity.TagActivity;
@@ -203,6 +204,9 @@ public class MainActivity extends Activity {
                 case 41:
                     login.setNote("菜单选择fab");
                     break;
+                case 42:
+                    login.setNote("Scalpel 3D 展示界面布局");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -352,6 +356,9 @@ public class MainActivity extends Activity {
                         break;
                     case 41:
                         startActivity(new Intent(mContext, FabActivity.class));
+                        break;
+                    case 42:
+                        startActivity(new Intent(mContext, ScalpelActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

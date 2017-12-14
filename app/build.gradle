@@ -88,5 +88,8 @@ dependencies {
 
     // FloatingActionButton
     compile 'com.github.clans:fab:1.6.4'
+
+    // 3D布局图层
+    compile 'com.jakewharton.scalpel:scalpel:1.1.2'
 }
 

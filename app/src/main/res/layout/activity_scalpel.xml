@@ -33,6 +33,7 @@
                     android:autoLink="web"
                     android:gravity="center"
                     android:text="CSDN：http://blog.csdn.net/jiashuai94" />
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -52,6 +53,7 @@
                     android:autoLink="web"
                     android:gravity="center"
                     android:text="Github：https://github.com/shuaijia" />
+
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -72,6 +74,7 @@
                     android:autoLink="email"
                     android:gravity="center"
                     android:text="邮箱：819418850@qq.com" />
+
             </android.support.v7.widget.CardView>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

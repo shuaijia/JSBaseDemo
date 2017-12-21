@@ -15,10 +15,10 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            android:textSize="16sp"
+            android:layout_centerInParent="true"
             android:text=""
-            android:layout_centerInParent="true"/>
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
 
         <!--左侧-->
         <ImageView
@@ -26,8 +26,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_centerVertical="true"
-            android:src="@mipmap/back"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/back" />
 
         <!--操作-->
         <TextView
@@ -36,11 +36,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
             android:text="操作"
             android:textColor="#ffffff"
             android:textSize="16sp"
-            android:layout_marginRight="5dp"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
     </RelativeLayout>
 
@@ -54,11 +54,9 @@
         android:minHeight="2dp"
         android:progressDrawable="@drawable/layer_progress_bar_web" />
 
-
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 
 </LinearLayout>

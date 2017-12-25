@@ -59,6 +59,7 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
         bgBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.snow_bg);
 
         init();
+
     }
 
     private void init() {

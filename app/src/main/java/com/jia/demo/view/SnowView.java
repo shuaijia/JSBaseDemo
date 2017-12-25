@@ -54,7 +54,6 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
         surfaceHolder.addCallback(this);
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-//        mPaint.setColor(Color.WHITE);
 
         bgBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.snow_bg);
 
@@ -171,7 +170,6 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
                 try {
                     this.join();// 保证run方法执行完毕
                 } catch (InterruptedException e) {
-                    // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
                 workIsNotFinish = false;

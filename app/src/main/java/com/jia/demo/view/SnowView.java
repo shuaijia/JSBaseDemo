@@ -40,12 +40,11 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
     private Snow curSnow;
 
     // 一屏最多雪花书
-    private int maxCount = 125;
+    private int maxCount = 85;
 
     private DrawThread mDrawThread;
 
     private Bitmap bgBitmap;
-
 
     public SnowView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -66,17 +65,19 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
         DisplayMetrics dm = getResources().getDisplayMetrics();
         snows = new ArrayList<>();
 
+        float x, y, size, speed;
+        int alfa, srcType;
+
         for (int i = 0; i < maxCount; i++) {
-            float x = (float) Math.floor(Math.random() * dm.widthPixels);//初始X坐标
-            float y = (float) Math.floor(Math.random() * dm.heightPixels);//初始Y坐标
+            x = (float) Math.floor(Math.random() * dm.widthPixels);//初始X坐标
+            y = (float) Math.floor(Math.random() * dm.heightPixels);//初始Y坐标
 
-            float size = (float) ((Math.random() * 15f) + 20f);//初始半径
-            float speed = (float) ((Math.random() * 6) + 5);
-            int alfa = (int) Math.floor(100 * Math.random()+155);
-            int srcType = (int) (Math.random() + 0.5);
+            size = (float) ((Math.random() * 15f) + 20f);//初始半径
+            speed = (float) ((Math.random() * 6) + 5);
+            alfa = (int) Math.floor(100 * Math.random() + 155);
+            srcType = (int) (Math.random() + 0.5);
 
-            Snow snow = new Snow(x, y, alfa, size, speed, srcType, false);
-            snows.add(snow);
+            snows.add(new Snow(x, y, alfa, size, speed, srcType));
         }
     }
 
@@ -153,7 +154,7 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
 
                         canvas.drawBitmap(snowBitmap, null, rect, mPaint);
 
-                        snows.set(i, new Snow(x, y, alfa, size, speed, type, false));
+                        snows.set(i, new Snow(x, y, alfa, size, speed, type));
                     }
 
                     surfaceHolder.unlockCanvasAndPost(canvas);

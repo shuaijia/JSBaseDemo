@@ -12,17 +12,15 @@ public class Snow {
     private int alfa;
     private float size;
     private float speed;
-    private boolean RepeatLabel;
     private int srcType;
 
-    public Snow(float x, float y, int alfa, float size, float speed, int srcType, boolean repeatLabel) {
+    public Snow(float x, float y, int alfa, float size, float speed, int srcType) {
         this.x = x;
         this.y = y;
         this.alfa = alfa;
         this.size = size;
         this.speed = speed;
         this.srcType = srcType;
-        RepeatLabel = repeatLabel;
     }
 
     public float getX() {
@@ -65,14 +63,6 @@ public class Snow {
         this.speed = speed;
     }
 
-    public boolean isRepeatLabel() {
-        return RepeatLabel;
-    }
-
-    public void setRepeatLabel(boolean repeatLabel) {
-        RepeatLabel = repeatLabel;
-    }
-
     public int getSrcType() {
         return srcType;
     }
@@ -89,7 +79,6 @@ public class Snow {
                 ", alfa=" + alfa +
                 ", size=" + size +
                 ", speed=" + speed +
-                ", RepeatLabel=" + RepeatLabel +
                 ", srcType=" + srcType +
                 '}';
     }

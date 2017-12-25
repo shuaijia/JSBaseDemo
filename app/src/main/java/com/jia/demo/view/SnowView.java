@@ -54,7 +54,7 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
         surfaceHolder.addCallback(this);
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setColor(Color.WHITE);
+//        mPaint.setColor(Color.WHITE);
 
         bgBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.snow_bg);
 
@@ -72,8 +72,8 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
             float y = (float) Math.floor(Math.random() * dm.heightPixels);//初始Y坐标
 
             float size = (float) ((Math.random() * 15f) + 20f);//初始半径
-            float speed = (float) ((Math.random() * 6) + 2);
-            int alfa = (int) Math.floor(255 * Math.random());
+            float speed = (float) ((Math.random() * 6) + 5);
+            int alfa = (int) Math.floor(100 * Math.random()+155);
             int srcType = (int) (Math.random() + 0.5);
 
             Snow snow = new Snow(x, y, alfa, size, speed, srcType, false);
@@ -150,9 +150,9 @@ public class SnowView extends SurfaceView implements SurfaceHolder.Callback {
                             snowBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.snow2);
                         }
 
-                        RectF rect=new RectF(x,y,x+size,y+size);
+                        RectF rect = new RectF(x, y, x + size, y + size);
 
-                        canvas.drawBitmap(snowBitmap,null,rect,null);
+                        canvas.drawBitmap(snowBitmap, null, rect, mPaint);
 
                         snows.set(i, new Snow(x, y, alfa, size, speed, type, false));
                     }

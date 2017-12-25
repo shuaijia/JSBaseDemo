@@ -103,8 +103,8 @@
             android:label="@string/title_activity_tantan"
             android:theme="@style/AppTheme" />
         <activity android:name=".activity.FabActivity" />
-        <activity
-            android:name=".activity.ScalpelActivity"></activity>
+        <activity android:name=".activity.ScalpelActivity" />
+        <activity android:name=".activity.ChristmasSnowActivity"/>
     </application>
 
 </manifest>

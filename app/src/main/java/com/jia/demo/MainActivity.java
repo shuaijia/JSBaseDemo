@@ -10,6 +10,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.jia.demo.activity.CameraActivity;
+import com.jia.demo.activity.ChristmasSnowActivity;
 import com.jia.demo.activity.CircularProgressActivity;
 import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
@@ -207,6 +208,9 @@ public class MainActivity extends Activity {
                 case 42:
                     login.setNote("Scalpel 3D 展示界面布局");
                     break;
+                case 43:
+                    login.setNote("圣诞节雪花效果");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -359,6 +363,9 @@ public class MainActivity extends Activity {
                         break;
                     case 42:
                         startActivity(new Intent(mContext, ScalpelActivity.class));
+                        break;
+                    case 43:
+                        startActivity(new Intent(mContext, ChristmasSnowActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

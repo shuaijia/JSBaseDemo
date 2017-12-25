@@ -215,7 +215,6 @@ public class MainActivity extends Activity {
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
             }
-
             list.add(login);
         }
 

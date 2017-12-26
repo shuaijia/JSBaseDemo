@@ -8,7 +8,7 @@ import com.jia.demo.R;
 import com.jia.demo.base.recyclerview.JsBaseHolder;
 
 /**
- * Describtion:
+ * Description: 首页 ViewHolder
  * Created by jia on 2017/3/17 0017.
  * 人之所以能，是相信能
  */

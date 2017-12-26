@@ -3,11 +3,15 @@ package com.jia.demo.adapter;
 
 import android.content.Context;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.jia.demo.R;
 import com.jia.demo.base.recyclerview.JsBaseAdapter;
 import com.jia.demo.bean.Login;
+import com.jia.demo.view.CustomPopWindow;
 
 import java.util.List;
 
@@ -39,7 +43,7 @@ public class MyAdapter extends JsBaseAdapter<Login,MyHolder> {
     }
 
     @Override
-    public void bindCustomViewHolder(MyHolder holder, int position) {
+    public void bindCustomViewHolder(final MyHolder holder, int position) {
         holder.getTv_item().setText(dataList.get(position).getNote()+"");
     }
 

@@ -46,6 +46,4 @@ public class MyAdapter extends JsBaseAdapter<Login,MyHolder> {
     public void bindCustomViewHolder(final MyHolder holder, int position) {
         holder.getTv_item().setText(dataList.get(position).getNote()+"");
     }
-
-
 }

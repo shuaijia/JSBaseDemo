@@ -44,7 +44,6 @@ public class PopupWindowActivity extends Activity {
                 showPopWinAsLocation();
             }
         });
-
     }
 
     private void showPopWinAtLocation() {

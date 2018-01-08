@@ -15,6 +15,7 @@ import com.jia.demo.activity.CircularProgressActivity;
 import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
 import com.jia.demo.activity.FabActivity;
+import com.jia.demo.activity.GalleryActivity;
 import com.jia.demo.activity.GlideImageViewActivity;
 import com.jia.demo.activity.HtmlCacheActivity;
 import com.jia.demo.activity.DBActivity;
@@ -211,6 +212,9 @@ public class MainActivity extends Activity {
                 case 43:
                     login.setNote("圣诞节雪花效果");
                     break;
+                case 44:
+                    login.setNote("小清新的画廊");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -365,6 +369,9 @@ public class MainActivity extends Activity {
                         break;
                     case 43:
                         startActivity(new Intent(mContext, ChristmasSnowActivity.class));
+                        break;
+                    case 44:
+                        startActivity(new Intent(mContext, GalleryActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

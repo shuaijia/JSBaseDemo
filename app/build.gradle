@@ -9,10 +9,14 @@ android {
 
     defaultConfig {
         applicationId "com.jia.demo"
-        minSdkVersion 21
+        minSdkVersion 18
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+
+        //启用renderscript
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {

@@ -39,6 +39,7 @@ import com.jia.demo.activity.ParallaxActivity;
 import com.jia.demo.activity.PasswordEditTextActivity;
 import com.jia.demo.activity.PathAnimationActivity;
 import com.jia.demo.activity.PopupWindowActivity;
+import com.jia.demo.activity.ProgressUploadButtonActivity;
 import com.jia.demo.activity.RadarActivity;
 import com.jia.demo.activity.RecyclerViewActivity;
 import com.jia.demo.activity.RetrofitActivity;
@@ -223,6 +224,9 @@ public class MainActivity extends Activity {
                 case 46:
                     login.setNote("MD风格斜线布局");
                     break;
+                case 47:
+                    login.setNote("上传进度 按钮");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -387,6 +391,10 @@ public class MainActivity extends Activity {
                     case 46:
                         startActivity(new Intent(mContext, DiagonalActivity.class));
                         break;
+                    case 47:
+                        startActivity(new Intent(mContext, ProgressUploadButtonActivity.class));
+                        break;
+
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();
                 }

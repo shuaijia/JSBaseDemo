@@ -102,5 +102,7 @@ dependencies {
     compile 'com.github.florent37:diagonallayout:1.0.7'
     // 动态ImageView
     compile 'com.flaviofaria:kenburnsview:1.0.7'
+    // 上传按钮
+    compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
 }
 

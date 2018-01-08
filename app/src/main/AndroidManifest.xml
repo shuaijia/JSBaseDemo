@@ -105,7 +105,9 @@
         <activity android:name=".activity.FabActivity" />
         <activity android:name=".activity.ScalpelActivity" />
         <activity android:name=".activity.ChristmasSnowActivity" />
-        <activity android:name=".activity.GalleryActivity"/>
+        <activity android:name=".activity.GalleryActivity" />
+        <activity android:name=".activity.LableActivity" />
+        <activity android:name=".activity.DiagonalActivity"></activity>
     </application>
 
 </manifest>

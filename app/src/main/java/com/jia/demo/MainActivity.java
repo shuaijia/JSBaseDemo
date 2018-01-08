@@ -13,6 +13,7 @@ import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.ChristmasSnowActivity;
 import com.jia.demo.activity.CircularProgressActivity;
 import com.jia.demo.activity.DataBindingActivity;
+import com.jia.demo.activity.DiagonalActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
 import com.jia.demo.activity.FabActivity;
 import com.jia.demo.activity.GalleryActivity;
@@ -23,6 +24,7 @@ import com.jia.demo.activity.HuaLangActivity;
 import com.jia.demo.activity.IndexActivity;
 import com.jia.demo.activity.ItemAnimatorActivity;
 import com.jia.demo.activity.JavaActivity;
+import com.jia.demo.activity.LableActivity;
 import com.jia.demo.activity.LifeMethodActivity;
 import com.jia.demo.activity.LyricViewActivity;
 import com.jia.demo.activity.MILoadingActivity;
@@ -215,6 +217,12 @@ public class MainActivity extends Activity {
                 case 44:
                     login.setNote("小清新的画廊");
                     break;
+                case 45:
+                    login.setNote("图片、按钮 标签");
+                    break;
+                case 46:
+                    login.setNote("MD风格斜线布局");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -372,6 +380,12 @@ public class MainActivity extends Activity {
                         break;
                     case 44:
                         startActivity(new Intent(mContext, GalleryActivity.class));
+                        break;
+                    case 45:
+                        startActivity(new Intent(mContext, LableActivity.class));
+                        break;
+                    case 46:
+                        startActivity(new Intent(mContext, DiagonalActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

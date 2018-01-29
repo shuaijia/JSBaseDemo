@@ -18,20 +18,20 @@
         android:background="#fff"
         app:calendar_height="50dp"
         app:current_month_lunar_text_color="#CFCFCF"
-        app:current_month_text_color="#333333"
+        app:current_month_text_color="#963"
         app:min_year="2004"
-        app:month_view="com.haibin.calendarviewproject.simple.SimpleCalendarCardView"
+
+        app:month_view="com.jia.demo.view.calendar.SimpleCalendarCardView"
         app:month_view_show_mode="mode_only_current"
         app:other_month_text_color="#e1e1e1"
         app:scheme_text="假"
-        app:scheme_text_color="#333"
-        app:scheme_theme_color="#333"
-        app:selected_text_color="#fff"
-        app:selected_theme_color="#333"
+        app:scheme_text_color="#854"
+        app:scheme_theme_color="#564"
+        app:selected_text_color="#852451"
+        app:selected_theme_color="#253"
         app:week_background="#fff"
-        app:week_bar_view="com.haibin.calendarviewproject.EnglishWeekBar"
         app:week_text_color="#111"
-        app:week_view="com.haibin.calendarviewproject.simple.SimpleWeekView" />
-
+        app:week_view="com.jia.demo.view.calendar.SimpleWeekView" />
+    <!--app:week_bar_view="com.haibin.calendarviewproject.EnglishWeekBar"-->
 
 </RelativeLayout>

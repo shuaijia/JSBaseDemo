@@ -111,6 +111,6 @@ dependencies {
     compile 'com.haibin:calendarview:3.1.9'
 
     // 顶部提示框(https://github.com/Tapadoo/Alerter)
-    compile 'com.tapadoo.android:alerter:2.0.4'
+//    compile 'com.tapadoo.android:alerter:2.0.4' 依赖冲突
 }
 

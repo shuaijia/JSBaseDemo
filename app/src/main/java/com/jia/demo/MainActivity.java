@@ -233,7 +233,7 @@ public class MainActivity extends Activity {
                     login.setNote("日历 控件");
                     break;
                 case 49:
-                    login.setNote("顶部 提醒 框");
+                    login.setNote("顶部 提醒 框 // 依赖冲突，已屏蔽");
                     break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");

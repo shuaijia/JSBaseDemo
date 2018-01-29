@@ -9,4 +9,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.jia.demo.activity.AlertActivity">
 
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue_500"
+        android:text="提示"
+        android:textColor="@color/cpb_white" />
+
 </RelativeLayout>

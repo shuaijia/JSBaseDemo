@@ -108,7 +108,8 @@
         <activity android:name=".activity.GalleryActivity" />
         <activity android:name=".activity.LableActivity" />
         <activity android:name=".activity.DiagonalActivity" />
-        <activity android:name=".activity.ProgressUploadButtonActivity"></activity>
+        <activity android:name=".activity.ProgressUploadButtonActivity" />
+        <activity android:name=".activity.CalendarActivity" />
     </application>
 
 </manifest>

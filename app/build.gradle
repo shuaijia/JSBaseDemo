@@ -106,5 +106,8 @@ dependencies {
     compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
 
     compile 'com.github.mcxtzhang:ZLayoutManager:V1.1.0'
+
+    // 日历控件（https://github.com/huanghaibin-dev/CalendarView）
+    compile 'com.haibin:calendarview:3.1.9'
 }
 

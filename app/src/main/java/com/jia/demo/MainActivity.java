@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.jia.demo.activity.CalendarActivity;
 import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.ChristmasSnowActivity;
 import com.jia.demo.activity.CircularProgressActivity;
@@ -227,6 +228,9 @@ public class MainActivity extends Activity {
                 case 47:
                     login.setNote("上传进度 按钮");
                     break;
+                case 48:
+                    login.setNote("日历 控件");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -394,7 +398,9 @@ public class MainActivity extends Activity {
                     case 47:
                         startActivity(new Intent(mContext, ProgressUploadButtonActivity.class));
                         break;
-
+                    case 48:
+                        startActivity(new Intent(mContext, CalendarActivity.class));
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();
                 }

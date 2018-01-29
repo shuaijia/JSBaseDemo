@@ -109,5 +109,8 @@ dependencies {
 
     // 日历控件（https://github.com/huanghaibin-dev/CalendarView）
     compile 'com.haibin:calendarview:3.1.9'
+
+    // 顶部提示框(https://github.com/Tapadoo/Alerter)
+    compile 'com.tapadoo.android:alerter:2.0.4'
 }
 

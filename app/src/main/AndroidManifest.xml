@@ -110,6 +110,7 @@
         <activity android:name=".activity.DiagonalActivity" />
         <activity android:name=".activity.ProgressUploadButtonActivity" />
         <activity android:name=".activity.CalendarActivity" />
+        <activity android:name=".activity.AlertActivity"/>
     </application>
 
 </manifest>

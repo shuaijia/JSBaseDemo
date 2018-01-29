@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.jia.demo.activity.AlertActivity;
 import com.jia.demo.activity.CalendarActivity;
 import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.ChristmasSnowActivity;
@@ -81,7 +82,7 @@ public class MainActivity extends Activity {
 
 //      ===================BaseAdapter测试=====================================
         List<Login> list = new ArrayList<>();
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 60; i++) {
             Login login = new Login();
             switch (i) {
                 case 0:
@@ -230,6 +231,9 @@ public class MainActivity extends Activity {
                     break;
                 case 48:
                     login.setNote("日历 控件");
+                    break;
+                case 49:
+                    login.setNote("顶部 提醒 框");
                     break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
@@ -400,6 +404,9 @@ public class MainActivity extends Activity {
                         break;
                     case 48:
                         startActivity(new Intent(mContext, CalendarActivity.class));
+                        break;
+                    case 49:
+                        startActivity(new Intent(mContext, AlertActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

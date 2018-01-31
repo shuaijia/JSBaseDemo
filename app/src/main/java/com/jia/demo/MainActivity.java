@@ -10,6 +10,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.jia.demo.activity.AlertActivity;
+import com.jia.demo.activity.AnimationActivity;
 import com.jia.demo.activity.CalendarActivity;
 import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.ChristmasSnowActivity;
@@ -235,6 +236,9 @@ public class MainActivity extends Activity {
                 case 49:
                     login.setNote("顶部 提醒 框 // 依赖冲突，已屏蔽");
                     break;
+                case 50:
+                    login.setNote("动画");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -407,6 +411,9 @@ public class MainActivity extends Activity {
                         break;
                     case 49:
                         startActivity(new Intent(mContext, AlertActivity.class));
+                        break;
+                    case 50:
+                        startActivity(new Intent(mContext, AnimationActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

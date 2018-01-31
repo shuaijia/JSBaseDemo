@@ -112,5 +112,9 @@ dependencies {
 
     // 顶部提示框(https://github.com/Tapadoo/Alerter)
 //    compile 'com.tapadoo.android:alerter:2.0.4' 依赖冲突
+
+    // 动画
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.daimajia.androidanimations:library:2.3@aar'
 }
 

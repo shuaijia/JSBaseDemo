@@ -2,4 +2,5 @@
     <string name="app_name">JSDemo</string>
     <string name="title_activity_main3">Main3Activity</string>
     <string name="title_activity_tantan">TantanActivity</string>
+    <string name="title_activity_tab_target_view">TabTargetViewActivity</string>
 </resources>

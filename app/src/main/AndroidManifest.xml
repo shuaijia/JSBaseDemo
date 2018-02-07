@@ -111,7 +111,10 @@
         <activity android:name=".activity.ProgressUploadButtonActivity" />
         <activity android:name=".activity.CalendarActivity" />
         <activity android:name=".activity.AlertActivity" />
-        <activity android:name=".activity.AnimationActivity"></activity>
+        <activity android:name=".activity.AnimationActivity" />
+        <activity
+            android:name=".activity.TabTargetViewActivity"
+            android:label="@string/title_activity_tab_target_view"></activity>
     </application>
 
 </manifest>

@@ -52,6 +52,7 @@ import com.jia.demo.activity.ScaleTypeActivity;
 import com.jia.demo.activity.ScalpelActivity;
 import com.jia.demo.activity.StatusBarActivity;
 import com.jia.demo.activity.TBSActivity;
+import com.jia.demo.activity.TabTargetViewActivity;
 import com.jia.demo.activity.TagActivity;
 import com.jia.demo.activity.TantanActivity;
 import com.jia.demo.activity.VerticalLooperViewActivity;
@@ -239,6 +240,9 @@ public class MainActivity extends Activity {
                 case 50:
                     login.setNote("动画");
                     break;
+                case 51:
+                    login.setNote("tabTargetView");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -414,6 +418,9 @@ public class MainActivity extends Activity {
                         break;
                     case 50:
                         startActivity(new Intent(mContext, AnimationActivity.class));
+                        break;
+                    case 51:
+                        startActivity(new Intent(mContext, TabTargetViewActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

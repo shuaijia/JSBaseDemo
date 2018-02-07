@@ -1,10 +1,8 @@
 package com.jia.demo.activity;
 
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.app.Activity;
-import android.support.design.widget.Snackbar;
 
 import com.getkeepsafe.taptargetview.TapTarget;
 import com.getkeepsafe.taptargetview.TapTargetView;

@@ -15,6 +15,7 @@ import com.jia.demo.activity.CalendarActivity;
 import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.ChristmasSnowActivity;
 import com.jia.demo.activity.CircularProgressActivity;
+import com.jia.demo.activity.CoordinatorLayoutActivity;
 import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.DiagonalActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
@@ -243,6 +244,9 @@ public class MainActivity extends Activity {
                 case 51:
                     login.setNote("tabTargetView");
                     break;
+                case 52:
+                    login.setNote("折叠工具栏");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -421,6 +425,9 @@ public class MainActivity extends Activity {
                         break;
                     case 51:
                         startActivity(new Intent(mContext, TabTargetViewActivity.class));
+                        break;
+                    case 52:
+                        startActivity(new Intent(mContext, CoordinatorLayoutActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

@@ -114,7 +114,10 @@
         <activity android:name=".activity.AnimationActivity" />
         <activity
             android:name=".activity.TabTargetViewActivity"
-            android:label="@string/title_activity_tab_target_view"></activity>
+            android:label="@string/title_activity_tab_target_view"/>
+        <activity
+            android:name=".activity.CoordinatorLayoutActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

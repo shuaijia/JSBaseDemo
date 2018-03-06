@@ -1,12 +1,8 @@
 package com.jia.demo.activity;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.ListFragment;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,8 +13,6 @@ import android.widget.TextView;
 
 import com.jia.demo.R;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Description: 嵌套滚动的界面

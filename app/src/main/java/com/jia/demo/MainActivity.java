@@ -206,7 +206,7 @@ public class MainActivity extends Activity {
                     login.setNote("歌词显示View");
                     break;
                 case 39:
-                    login.setNote("NestedScrolling");
+                    login.setNote("CollapsingToolbarLayout Toolbar折叠效果");
                     break;
                 case 40:
                     login.setNote("仿探探滑动卡片");

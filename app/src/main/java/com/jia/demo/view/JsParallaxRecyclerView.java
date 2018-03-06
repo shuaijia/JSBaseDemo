@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Describtion: 有折叠效果的RecyclerView
+ * Description: 有折叠效果的RecyclerView
  * Created by jia on 2017/3/30 0030.
  * 人之所以能，是相信能
  */

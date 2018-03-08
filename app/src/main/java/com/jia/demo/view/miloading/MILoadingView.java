@@ -136,6 +136,7 @@ public class MILoadingView extends View {
                 }
             }
         });
+
         //监听动画执行过程
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override

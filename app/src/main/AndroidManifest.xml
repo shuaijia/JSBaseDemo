@@ -44,7 +44,8 @@
             android:name=".MainActivity"
             android:launchMode="singleTop" />
         <activity android:name=".base.BaseWebViewActivity" />
-        <activity android:name=".activity.TagActivity" />
+        <activity android:name=".activity.TagActivity"
+            android:theme="@android:style/Theme.Translucent"/>
         <activity android:name=".activity.ViewPagerActivity" />
         <activity android:name=".activity.HtmlCacheActivity" />
         <activity android:name=".activity.ParallaxActivity" />

@@ -25,6 +25,5 @@ public class AnimationActivity extends Activity {
                 .pivotX(YoYo.CENTER_PIVOT)
                 .playOn(findViewById(R.id.tv_anim));
 
-
     }
 }

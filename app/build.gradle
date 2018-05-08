@@ -119,5 +119,6 @@ dependencies {
 
     // tabTargetView
     compile 'com.getkeepsafe.taptargetview:taptargetview:1.11.0'
+    compile 'com.android.support.constraint:constraint-layout:1.1.0'
 }
 

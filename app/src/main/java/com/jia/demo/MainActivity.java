@@ -56,6 +56,7 @@ import com.jia.demo.activity.TBSActivity;
 import com.jia.demo.activity.TabTargetViewActivity;
 import com.jia.demo.activity.TagActivity;
 import com.jia.demo.activity.TantanActivity;
+import com.jia.demo.activity.TransitionActivity;
 import com.jia.demo.activity.VerticalLooperViewActivity;
 import com.jia.demo.activity.ViewPagerActivity;
 import com.jia.demo.activity.VoronoiActivity;
@@ -247,6 +248,9 @@ public class MainActivity extends Activity {
                 case 52:
                     login.setNote("折叠工具栏");
                     break;
+                case 53:
+                    login.setNote("过度动画");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -428,6 +432,9 @@ public class MainActivity extends Activity {
                         break;
                     case 52:
                         startActivity(new Intent(mContext, CoordinatorLayoutActivity.class));
+                        break;
+                    case 53:
+                        startActivity(new Intent(mContext, TransitionActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

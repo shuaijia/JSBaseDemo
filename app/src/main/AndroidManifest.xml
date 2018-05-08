@@ -44,8 +44,9 @@
             android:name=".MainActivity"
             android:launchMode="singleTop" />
         <activity android:name=".base.BaseWebViewActivity" />
-        <activity android:name=".activity.TagActivity"
-            android:theme="@android:style/Theme.Translucent"/>
+        <activity
+            android:name=".activity.TagActivity"
+            android:theme="@android:style/Theme.Translucent" />
         <activity android:name=".activity.ViewPagerActivity" />
         <activity android:name=".activity.HtmlCacheActivity" />
         <activity android:name=".activity.ParallaxActivity" />
@@ -115,10 +116,14 @@
         <activity android:name=".activity.AnimationActivity" />
         <activity
             android:name=".activity.TabTargetViewActivity"
-            android:label="@string/title_activity_tab_target_view"/>
+            android:label="@string/title_activity_tab_target_view" />
         <activity
             android:name=".activity.CoordinatorLayoutActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.TransitionActivity"
+            android:label="@string/title_activity_transition"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

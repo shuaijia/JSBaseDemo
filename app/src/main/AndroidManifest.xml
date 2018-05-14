@@ -123,7 +123,11 @@
         <activity
             android:name=".activity.TransitionActivity"
             android:label="@string/title_activity_transition"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.PickerViewActivity"
+            android:label="PickerViewActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

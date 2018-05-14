@@ -42,6 +42,7 @@ import com.jia.demo.activity.PDFActivity;
 import com.jia.demo.activity.ParallaxActivity;
 import com.jia.demo.activity.PasswordEditTextActivity;
 import com.jia.demo.activity.PathAnimationActivity;
+import com.jia.demo.activity.PickerViewActivity;
 import com.jia.demo.activity.PopupWindowActivity;
 import com.jia.demo.activity.ProgressUploadButtonActivity;
 import com.jia.demo.activity.RadarActivity;
@@ -251,6 +252,9 @@ public class MainActivity extends Activity {
                 case 53:
                     login.setNote("过度动画");
                     break;
+                case 54:
+                    login.setNote("联动选择器");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -435,6 +439,9 @@ public class MainActivity extends Activity {
                         break;
                     case 53:
                         startActivity(new Intent(mContext, TransitionActivity.class));
+                        break;
+                    case 54:
+                        startActivity(new Intent(mContext, PickerViewActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="存鱼丸"
+            android:textColor="#1b1b1b"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_yw_pool_setting_back"
+            android:layout_width="13dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/im_yw_pool_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@drawable/im_shape_fish_ball_pool_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="存储额度"
+            android:textColor="#4b4b4b"
+            android:textSize="15sp" />
+
+        <!--操作区域-->
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_yw_pool_setting_sub"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/im_yw_pool_setting_sub" />
+
+            <ImageView
+                android:id="@+id/iv_yw_pool_setting_add"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/im_yw_pool_setting_add" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/iv_yw_pool_setting_add"
+                android:layout_toRightOf="@id/iv_yw_pool_setting_sub"
+                android:background="@null"
+                android:padding="0dp"
+                android:text="150"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColor="#ff7700"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="万鱼丸"
+            android:textColor="#999"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_yw_pool_setting_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:text="预计可用15天"
+            android:textColor="#999"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="最低额度不得低于最低值"
+        android:textColor="#ff7700"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="最小值根据车队当前总人数、签到率自动计算"
+        android:textColor="#999"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/bt_ye_pool_setting_sure"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/im_shape_fish_ball_pool_bt"
+        android:text="存入鱼丸池"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+</LinearLayout>

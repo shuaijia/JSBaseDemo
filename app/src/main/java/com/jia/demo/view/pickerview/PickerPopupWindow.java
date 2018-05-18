@@ -1,6 +1,7 @@
 package com.jia.demo.view.pickerview;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,7 +14,7 @@ import com.jia.demo.view.pickerview.adapter.AbstractWheelTextAdapter1;
 import java.util.ArrayList;
 
 /**
- * Description:
+ * Description: 滚动选择器
  * Created by jia on 2018/5/14.
  * 人之所以能，是相信能。
  */
@@ -54,10 +55,10 @@ public class PickerPopupWindow extends PopupWindow implements View.OnClickListen
 
         this.setContentView(view);
         this.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
-        this.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
+        this.setHeight(ViewGroup.LayoutParams.WRAP_CONTENT);
         this.setFocusable(true);
-//      this.setAnimationStyle(R.style.AnimBottom);
-        this.setBackgroundDrawable(new ColorDrawable(0xb0000000));
+        this.setOutsideTouchable(true);
+        this.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         lyChangeAddressChild.setOnClickListener(this);
         btnSure.setOnClickListener(this);

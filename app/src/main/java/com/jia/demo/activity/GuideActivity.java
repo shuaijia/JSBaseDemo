@@ -24,7 +24,7 @@ import com.jia.demo.base.recyclerview.JsAbsAdapter;
 import com.jia.demo.utils.SharedPreferencesUtils;
 
 /**
- * Describtion: 引导页
+ * Description: 引导页
  * Created by jia on 2017/3/28
  * 人之所以能，是相信能
  */
@@ -49,11 +49,10 @@ public class GuideActivity extends Activity {
         setContentView(R.layout.activity_guide);
 
         // 不是第一次打开，就直接跳转主页面
-        if (!SharedPreferencesUtils.getData(GuideActivity.this, "isFirstOpen", false)) {
+        if (!SharedPreferencesUtils.getData(GuideActivity.this, "isFirstOpen", true)) {
             startActivity(new Intent(GuideActivity.this, MainActivity.class));
         }
-        SharedPreferencesUtils.saveData(GuideActivity.this,"isFirstOpen",true);
-
+        SharedPreferencesUtils.saveData(GuideActivity.this,"isFirstOpen",false);
         mRootLayout = (RelativeLayout) findViewById(R.id.rl_root);
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         mArgbEvaluator = new ArgbEvaluator();

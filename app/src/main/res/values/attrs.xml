@@ -112,4 +112,13 @@
             <enum name="mode_fix" value="2" /> <!--自适应显示，不会多出一行，但是会自动填充-->
         </attr>
     </declare-styleable>
+
+    <!--自定义 虚线-->
+    <declare-styleable name="JsDashLineView">
+        <attr name="dash_gap" format="dimension"/>
+        <attr name="dash_width" format="dimension"/>
+        <attr name="dash_height" format="dimension"/>
+        <attr name="dash_color" format="color"/>
+    </declare-styleable>
+
 </resources>

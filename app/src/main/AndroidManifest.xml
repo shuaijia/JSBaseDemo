@@ -127,7 +127,14 @@
         <activity
             android:name=".activity.PickerViewActivity"
             android:label="PickerViewActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.DashLineViewActivity"
+            android:label="DashLineViewActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.BottomSheetsActivity"
+            android:label="BottomSheetsActivity"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

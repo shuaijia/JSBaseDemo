@@ -11,11 +11,13 @@ import android.widget.Toast;
 
 import com.jia.demo.activity.AlertActivity;
 import com.jia.demo.activity.AnimationActivity;
+import com.jia.demo.activity.BottomSheetsActivity;
 import com.jia.demo.activity.CalendarActivity;
 import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.ChristmasSnowActivity;
 import com.jia.demo.activity.CircularProgressActivity;
 import com.jia.demo.activity.CoordinatorLayoutActivity;
+import com.jia.demo.activity.DashLineViewActivity;
 import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.DiagonalActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
@@ -67,6 +69,7 @@ import com.jia.demo.adapter.MyAdapter;
 import com.jia.demo.base.BaseWebViewActivity;
 import com.jia.demo.base.recyclerview.JsOnItemClickListener;
 import com.jia.demo.bean.Login;
+import com.jia.demo.utils.Calculator;
 import com.jia.demo.utils.StatusBarUtils;
 
 import java.util.ArrayList;
@@ -255,6 +258,12 @@ public class MainActivity extends Activity {
                 case 54:
                     login.setNote("联动选择器");
                     break;
+                case 55:
+                    login.setNote("自定义View——虚线");
+                    break;
+                case 56:
+                    login.setNote("从下往上拉动布局");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -277,7 +286,11 @@ public class MainActivity extends Activity {
 
                 switch (position) {
                     case 0:
-                        startActivity(new Intent(mContext, TagActivity.class));
+//                        startActivity(new Intent(mContext, TagActivity.class));
+                        String expression = "50*(3-1)/3+2";
+                        double result = Calculator.conversion(expression);
+                        Toast.makeText(MainActivity.this, result + "", Toast.LENGTH_SHORT).show();
+
                         break;
                     case 1:
                         startActivity(new Intent(mContext, ViewPagerActivity.class));
@@ -442,6 +455,12 @@ public class MainActivity extends Activity {
                         break;
                     case 54:
                         startActivity(new Intent(mContext, PickerViewActivity.class));
+                        break;
+                    case 55:
+                        startActivity(new Intent(mContext, DashLineViewActivity.class));
+                        break;
+                    case 56:
+                        startActivity(new Intent(mContext, BottomSheetsActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

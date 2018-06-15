@@ -1,7 +1,7 @@
 package com.jia.demo.download;
 
 /**
- * Describtion:
+ * Description:
  * Created by jia on 2017/7/10.
  * 人之所以能，是相信能
  */

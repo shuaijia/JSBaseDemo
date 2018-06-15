@@ -262,7 +262,7 @@ public class MainActivity extends Activity {
                     login.setNote("自定义View——虚线");
                     break;
                 case 56:
-                    login.setNote("从下往上拉动布局");
+                    login.setNote("从下往上拉动布局(Bottom Sheets)");
                     break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");

@@ -15,3 +15,8 @@
 - 12.Material Design
 - 13.纵向走马灯
 - 14.自定义圆形进度条
+- 15.多线程下载，断点续传
+- 16.java基础
+- 17.Retrofit+RxJava
+- 18.封装Glide的ImageView
+- 19.瀑布流

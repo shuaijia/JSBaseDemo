@@ -11,3 +11,7 @@
 - 8.GreenDao数据库
 - 9.EventBus
 - 10.右边快速索引栏（类似通讯录）
+- 11.DataBinding
+- 12.Material Design
+- 13.纵向走马灯
+- 14.自定义圆形进度条

@@ -47,13 +47,19 @@ public class FloatWindowService extends Service {
 
                 // 新建悬浮窗控件
                 LayoutInflater layoutInflater = LayoutInflater.from(this);
-                View displayView = layoutInflater.inflate(R.layout.image_display_float, null);
+                final View displayView = layoutInflater.inflate(R.layout.image_display_float, null);
                 displayView.setOnTouchListener(new FloatingOnTouchListener());
 
                 ImageView imageView = (ImageView) displayView.findViewById(R.id.image_display_imageview);
-                imageView.setImageResource(R.drawable.app_icon);
-
                 imageView.setOnTouchListener(new FloatingOnTouchListener());
+
+                ImageView iv_close = (ImageView) displayView.findViewById(R.id.iv_close);
+                iv_close.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        windowManager.removeView(displayView);
+                    }
+                });
 
                 // 设置LayoutParam
                 layoutParams = new WindowManager.LayoutParams();
@@ -72,7 +78,7 @@ public class FloatWindowService extends Service {
                 layoutParams.x = 0;
                 layoutParams.y = 80;
                 layoutParams.format = PixelFormat.RGBA_8888;
-                layoutParams.width = 160;
+                layoutParams.width = 300;
                 layoutParams.height = 160;
 
                 // 将悬浮窗控件添加到WindowManager

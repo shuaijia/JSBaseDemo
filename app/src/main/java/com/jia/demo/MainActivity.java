@@ -64,6 +64,7 @@ import com.jia.demo.activity.VerticalLooperViewActivity;
 import com.jia.demo.activity.ViewPagerActivity;
 import com.jia.demo.activity.VoronoiActivity;
 import com.jia.demo.activity.WaterWaveProgressActivity;
+import com.jia.demo.activity.WindowManagerActivity;
 import com.jia.demo.activity.enter.animation.AnimMainActivity;
 import com.jia.demo.adapter.MyAdapter;
 import com.jia.demo.base.BaseWebViewActivity;
@@ -264,6 +265,9 @@ public class MainActivity extends Activity {
                 case 56:
                     login.setNote("从下往上拉动布局(Bottom Sheets)");
                     break;
+                case 57:
+                    login.setNote("悬浮窗");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -461,6 +465,9 @@ public class MainActivity extends Activity {
                         break;
                     case 56:
                         startActivity(new Intent(mContext, BottomSheetsActivity.class));
+                        break;
+                    case 57:
+                        startActivity(new Intent(mContext, WindowManagerActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

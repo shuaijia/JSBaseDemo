@@ -132,9 +132,14 @@
             android:name=".activity.DashLineViewActivity"
             android:label="DashLineViewActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.BottomSheetsActivity"
+        <activity
+            android:name=".activity.BottomSheetsActivity"
             android:label="BottomSheetsActivity"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.WindowManagerActivity"
+            android:label="WindowManagerActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

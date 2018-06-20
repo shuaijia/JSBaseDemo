@@ -1,2 +1,61 @@
 # JSBaseDemo
 自己的第一个github项目，对UI，网络等进行封装
+
+- 1.标签
+- 2.自定义banner
+- 3.BaseWebViewActivity
+- 4.html文件缓存
+- 5.RxJava
+- 6.封装OkHttp框架
+- 7.折叠效果的RecyclerView
+- 8.GreenDao数据库
+- 9.EventBus
+- 10.右边快速索引栏（类似通讯录）
+- 11.DataBinding
+- 12.Material Design
+- 13.纵向走马灯
+- 14.自定义圆形进度条
+- 15.多线程下载，断点续传
+- 16.java基础
+- 17.Retrofit+RxJava
+- 18.封装Glide的ImageView
+- 19.瀑布流
+- 20.SVG图片的使用
+- 21.path动画
+- 22.画廊效果
+- 23.水纹波浪加载进度
+- 24.自定义通知
+- 25.封装PopupWindow
+- 26.沉浸式状态栏
+- 27.Activity生命周期
+- 28.pdf阅读器
+- 29.RecyclerView的Item动画
+- 30.ImageView的ScaleType
+- 31.仿小米视频加载中动画
+- 32.密码输入框
+- 33.Activity跳转动画
+- 34.泰森多边形图
+- 35.雷达分析图
+- 36.相机相册库
+- 37.腾讯浏览服务
+- 38.图片视频选择
+- 39.歌词显示View
+- 40.CollapsingToolbarLayout折叠效果
+- 41.仿探探滑动卡片
+- 42.菜单选择FloatActionButton
+- 43.Scalpel 3D 展示界面布局
+- 44.圣诞节雪花效果
+- 45.小清新画廊
+- 46.图片、按钮  标签
+- 47.MD风格斜线布局
+- 48.上传进度 按钮
+- 49.日历控件
+- 50.顶部提醒框 （依赖冲突，已注掉）
+- 51.动画
+- 52.TabTargetView
+- 53.折叠工具栏
+- 54.过渡动画
+- 55.联动选择器
+- 56.自定义虚线view
+- 57.从下往上拉动布局（Bottom Sheets）
+- 58.悬浮窗

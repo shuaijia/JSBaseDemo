@@ -32,3 +32,13 @@
 - 29.RecyclerView的Item动画
 - 30.ImageView的ScaleType
 - 31.仿小米视频加载中动画
+- 32.密码输入框
+- 33.Activity跳转动画
+- 34.泰森多边形图
+- 35.雷达分析图
+- 36.相机相册库
+- 37.腾讯浏览服务
+- 38.图片视频选择
+- 39.歌词显示View
+- 40.CollapsingToolbarLayout折叠效果
+

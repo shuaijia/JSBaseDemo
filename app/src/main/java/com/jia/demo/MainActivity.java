@@ -64,7 +64,7 @@ import com.jia.demo.activity.VerticalLooperViewActivity;
 import com.jia.demo.activity.ViewPagerActivity;
 import com.jia.demo.activity.VoronoiActivity;
 import com.jia.demo.activity.WaterWaveProgressActivity;
-import com.jia.demo.activity.WindowManagerActivity;
+import com.jia.demo.activity.FloatWindowActivity;
 import com.jia.demo.activity.enter.animation.AnimMainActivity;
 import com.jia.demo.adapter.MyAdapter;
 import com.jia.demo.base.BaseWebViewActivity;
@@ -467,7 +467,7 @@ public class MainActivity extends Activity {
                         startActivity(new Intent(mContext, BottomSheetsActivity.class));
                         break;
                     case 57:
-                        startActivity(new Intent(mContext, WindowManagerActivity.class));
+                        startActivity(new Intent(mContext, FloatWindowActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

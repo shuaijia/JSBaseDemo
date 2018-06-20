@@ -24,4 +24,11 @@
 - 21.path动画
 - 22.画廊效果
 - 23.水纹波浪加载进度
-
+- 24.自定义通知
+- 25.封装PopupWindow
+- 26.沉浸式状态栏
+- 27.Activity生命周期
+- 28.pdf阅读器
+- 29.RecyclerView的Item动画
+- 30.ImageView的ScaleType
+- 31.仿小米视频加载中动画

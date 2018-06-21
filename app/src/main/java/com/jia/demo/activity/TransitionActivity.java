@@ -1,14 +1,10 @@
 package com.jia.demo.activity;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.transition.AutoTransition;
-import android.support.transition.Fade;
-import android.support.transition.Transition;
-import android.support.transition.TransitionManager;
 import android.support.v7.app.AppCompatActivity;
-import android.transition.Explode;
-import android.transition.Slide;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -17,12 +13,9 @@ import android.widget.RelativeLayout;
 import com.jia.demo.R;
 
 /**
- * 过度动画 界面
- * <p>
- * 相关博客：https://juejin.im/post/5ae057e46fb9a07aa83e6828
+ * 过渡动画
  */
 public class TransitionActivity extends AppCompatActivity implements View.OnClickListener {
-
 
     private Button bt_start;
     private ImageView iv_anim;
@@ -47,15 +40,12 @@ public class TransitionActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bt_start:
+                Intent intent = new Intent(this, Transition2Activity.class);
 
-                Fade fade = new Fade();
-                AutoTransition auto=new AutoTransition();
-                TransitionManager.beginDelayedTransition(rl_root, auto);
-
-                if (iv_anim.getVisibility() == View.VISIBLE) {
-                    iv_anim.setVisibility(View.GONE);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this, iv_anim, "head").toBundle());
                 } else {
-                    iv_anim.setVisibility(View.VISIBLE);
+                    startActivity(intent);
                 }
 
                 break;

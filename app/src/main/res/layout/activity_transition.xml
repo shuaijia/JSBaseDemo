@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/rl_root"
     tools:context="com.jia.demo.activity.TransitionActivity">
+
+    <ImageView
+        android:id="@+id/iv_anim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/head"
+        android:transitionName="head" />
 
     <Button
         android:id="@+id/bt_start"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="执行动画" />
-
-
-    <ImageView
-        android:id="@+id/iv_anim"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@mipmap/head"
-        android:scaleType="fitXY"
-        android:layout_centerInParent="true" />
-
+        android:text="共享一个元素" />
 </RelativeLayout>

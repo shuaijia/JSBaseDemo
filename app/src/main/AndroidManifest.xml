@@ -14,7 +14,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
 
-    <!--悬浮窗权限-->
+    <!-- 悬浮窗权限 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <!-- 配置单元测试框架的启动项 -->
@@ -128,6 +128,10 @@
             android:label="@string/title_activity_transition"
             android:theme="@style/AppTheme" />
         <activity
+            android:name=".activity.Transition2Activity"
+            android:label="Transition2Activity"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name=".activity.PickerViewActivity"
             android:label="PickerViewActivity"
             android:theme="@style/AppTheme" />
@@ -142,10 +146,11 @@
         <activity
             android:name=".activity.FloatWindowActivity"
             android:label="FloatWindowActivity"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
 
-        <!--悬浮窗-->
-        <service android:name=".service.FloatWindowService"/>
+        <!-- 悬浮窗 -->
+        <service android:name=".service.FloatWindowService" />
+
     </application>
 
 </manifest>

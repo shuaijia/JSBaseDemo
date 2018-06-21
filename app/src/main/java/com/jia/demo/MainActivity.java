@@ -254,7 +254,7 @@ public class MainActivity extends Activity {
                     login.setNote("折叠工具栏");
                     break;
                 case 53:
-                    login.setNote("过度动画");
+                    login.setNote("过渡动画");
                     break;
                 case 54:
                     login.setNote("联动选择器");

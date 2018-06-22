@@ -137,5 +137,9 @@ public class VerticalLooperViewActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        vf_vertical_looper.stopFlipping();
+        if (timer != null)
+            timer.cancel();
+        timer = null;
     }
 }

@@ -45,7 +45,6 @@ public class VerticalLooperViewActivity extends BaseActivity {
     @Override
     public void dealIntent(Intent intent) {
 
-
     }
 
     @Override
@@ -62,9 +61,7 @@ public class VerticalLooperViewActivity extends BaseActivity {
         list.add(new VerticalLooper("我是条目5", "https://img13.360buyimg.com/n4/s130x130_jfs/t4057/363/665075855/88680/37c364b6/58589017Na74fe1ae.jpg", "ee"));
         list.add(new VerticalLooper("我是条目6", "https://img13.360buyimg.com/n4/s130x130_jfs/t4057/363/665075855/88680/37c364b6/58589017Na74fe1ae.jpg", "ff"));
 
-
         setViewFlipper();
-
     }
 
     private void setViewFlipper() {
@@ -90,7 +87,6 @@ public class VerticalLooperViewActivity extends BaseActivity {
             timer = new Timer();
             timer.schedule(task, 0, 4000);
         }
-
     }
 
     private void setView(final int curr, int next) {
@@ -125,7 +121,6 @@ public class VerticalLooperViewActivity extends BaseActivity {
         vf_vertical_looper.addView(itemView, vf_vertical_looper.getChildCount());
         mCurrPos = next;
     }
-
 
     @Override
     public void onClick(int ViewId) {

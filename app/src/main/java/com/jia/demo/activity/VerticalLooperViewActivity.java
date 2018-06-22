@@ -105,14 +105,12 @@ public class VerticalLooperViewActivity extends BaseActivity {
         }
 
         tv_vertical_looper.setText(list.get(curr).getTitle() + "");
-        if(VerticalLooperViewActivity.this!=null){
+        if (VerticalLooperViewActivity.this != null) {
             Glide.with(VerticalLooperViewActivity.this)
                     .load(list.get(curr).getImgUrl())
                     .crossFade()
                     .into(ci_vertical_looper);
         }
-
-
 
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override

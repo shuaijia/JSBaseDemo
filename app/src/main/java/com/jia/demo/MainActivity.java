@@ -29,6 +29,7 @@ import com.jia.demo.activity.DBActivity;
 import com.jia.demo.activity.HuaLangActivity;
 import com.jia.demo.activity.IndexActivity;
 import com.jia.demo.activity.ItemAnimatorActivity;
+import com.jia.demo.activity.ItemDecorationActivity;
 import com.jia.demo.activity.JavaActivity;
 import com.jia.demo.activity.LableActivity;
 import com.jia.demo.activity.LifeMethodActivity;
@@ -268,6 +269,9 @@ public class MainActivity extends Activity {
                 case 57:
                     login.setNote("悬浮窗");
                     break;
+                case 58:
+                    login.setNote("ItemDecoration");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -468,6 +472,9 @@ public class MainActivity extends Activity {
                         break;
                     case 57:
                         startActivity(new Intent(mContext, FloatWindowActivity.class));
+                        break;
+                    case 58:
+                        startActivity(new Intent(mContext, ItemDecorationActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

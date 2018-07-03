@@ -147,10 +147,16 @@
             android:name=".activity.FloatWindowActivity"
             android:label="FloatWindowActivity"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.ItemDecorationActivity"
+            android:label="ItemDecorationActivity"
+            android:theme="@style/AppTheme" />
+
+
+
 
         <!-- 悬浮窗 -->
         <service android:name=".service.FloatWindowService" />
-
     </application>
 
 </manifest>

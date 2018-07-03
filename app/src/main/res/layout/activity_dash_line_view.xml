@@ -7,13 +7,13 @@
     tools:context="com.jia.demo.activity.DashLineViewActivity">
 
 
-    <com.jia.demo.view.JsDashLineView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        app:dash_color="#ff7700"
-        app:dash_gap="1dp"
-        app:dash_height="5dp"
-        app:dash_width="3dp" />
+    <!--<com.jia.demo.view.JsDashLineView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--app:dash_color="#ff7700"-->
+        <!--app:dash_gap="1dp"-->
+        <!--app:dash_height="5dp"-->
+        <!--app:dash_width="3dp" />-->
 
 </RelativeLayout>

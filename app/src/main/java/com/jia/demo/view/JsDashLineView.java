@@ -60,30 +60,30 @@ public class JsDashLineView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-//        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-//        mPaint.setColor(mDashColor);
-//        mPaint.setStrokeWidth(mDashHeight);
-//        mPaint.setStyle(Paint.Style.STROKE);
-//
-//        length = mDashGap + mDashWidth;
-//        mGapNum = (int) (viewWidth / length);
-//
-//        for (int i = 0; i < mGapNum; i++) {
-//            canvas.drawLine(i * length, 0, i * length + mDashWidth, mDashHeight, mPaint);
-//        }
-
-
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-        mPaint.setStyle(Paint.Style.STROKE);
-        mPaint.setStrokeWidth(mDashHeight);//画笔的宽度，其实就是虚线的高度
         mPaint.setColor(mDashColor);
-        int width = getMeasuredWidth();
-        int height = getMeasuredHeight();
-        float length = mDashGap + mDashWidth;
-        int num = (int) Math.floor(width / length);
-        for (int i = 0; i < num; i++) {
-            canvas.drawLine(i * length, 0, i * length + mDashWidth, height, mPaint);
+        mPaint.setStrokeWidth(mDashHeight);
+        mPaint.setStyle(Paint.Style.STROKE);
+
+        length = mDashGap + mDashWidth;
+        mGapNum = (int) (viewWidth / length);
+
+        for (int i = 0; i < mGapNum; i++) {
+            canvas.drawLine(i * length, 0, i * length + mDashWidth, mDashHeight, mPaint);
         }
+
+
+//        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+//        mPaint.setStyle(Paint.Style.STROKE);
+//        mPaint.setStrokeWidth(mDashHeight);//画笔的宽度，其实就是虚线的高度
+//        mPaint.setColor(mDashColor);
+//        int width = getMeasuredWidth();
+//        int height = getMeasuredHeight();
+//        float length = mDashGap + mDashWidth;
+//        int num = (int) Math.floor(width / length);
+//        for (int i = 0; i < num; i++) {
+//            canvas.drawLine(i * length, 0, i * length + mDashWidth, height, mPaint);
+//        }
     }
 
     public float getDashGap() {

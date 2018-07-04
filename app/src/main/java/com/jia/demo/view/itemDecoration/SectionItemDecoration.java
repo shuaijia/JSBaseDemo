@@ -47,8 +47,6 @@ public class SectionItemDecoration extends RecyclerView.ItemDecoration {
         textPaint.setTextAlign(Paint.Align.LEFT);
         fontMetrics = new Paint.FontMetrics();
         topGap = 30;
-
-
     }
 
 

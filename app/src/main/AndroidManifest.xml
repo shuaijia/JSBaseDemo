@@ -151,8 +151,10 @@
             android:name=".activity.ItemDecorationActivity"
             android:label="ItemDecorationActivity"
             android:theme="@style/AppTheme" />
-
-
+        <activity
+            android:name=".activity.ViewAnimationUtilsActivity"
+            android:label="ViewAnimationUtilsActivity"
+            android:theme="@style/AppTheme" />
 
 
         <!-- 悬浮窗 -->

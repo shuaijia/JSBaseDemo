@@ -22,6 +22,7 @@ import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.DiagonalActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
 import com.jia.demo.activity.FabActivity;
+import com.jia.demo.activity.ViewAnimationUtilsActivity;
 import com.jia.demo.activity.GalleryActivity;
 import com.jia.demo.activity.GlideImageViewActivity;
 import com.jia.demo.activity.HtmlCacheActivity;
@@ -272,6 +273,9 @@ public class MainActivity extends Activity {
                 case 58:
                     login.setNote("ItemDecoration");
                     break;
+                case 59:
+                    login.setNote("ViewAnimationUtils");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -475,6 +479,9 @@ public class MainActivity extends Activity {
                         break;
                     case 58:
                         startActivity(new Intent(mContext, ItemDecorationActivity.class));
+                        break;
+                    case 59:
+                        startActivity(new Intent(mContext, ViewAnimationUtilsActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

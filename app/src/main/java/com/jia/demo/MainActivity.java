@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
 
 //      ===================BaseAdapter测试=====================================
         List<Login> list = new ArrayList<>();
-        for (int i = 0; i < 80; i++) {
+        for (int i = 0; i < 70; i++) {
             Login login = new Login();
             switch (i) {
                 case 0:

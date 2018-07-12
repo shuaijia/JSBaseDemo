@@ -58,5 +58,10 @@
     <!--状态栏透明-->
     <style name="TranslucentTheme" parent="AppTheme">
     </style>
-    
+
+    <style name="SwipeBackStyle" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
 </resources>

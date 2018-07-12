@@ -68,6 +68,7 @@ import com.jia.demo.activity.VoronoiActivity;
 import com.jia.demo.activity.WaterWaveProgressActivity;
 import com.jia.demo.activity.FloatWindowActivity;
 import com.jia.demo.activity.enter.animation.AnimMainActivity;
+import com.jia.demo.activity.swipeback.SwipeBackActivity;
 import com.jia.demo.adapter.MyAdapter;
 import com.jia.demo.base.BaseWebViewActivity;
 import com.jia.demo.base.recyclerview.JsOnItemClickListener;
@@ -93,7 +94,7 @@ public class MainActivity extends Activity {
 
 //      ===================BaseAdapter测试=====================================
         List<Login> list = new ArrayList<>();
-        for (int i = 0; i < 60; i++) {
+        for (int i = 0; i < 80; i++) {
             Login login = new Login();
             switch (i) {
                 case 0:
@@ -275,6 +276,9 @@ public class MainActivity extends Activity {
                     break;
                 case 59:
                     login.setNote("ViewAnimationUtils");
+                    break;
+                case 60:
+                    login.setNote("右滑返回（关闭Activity）");
                     break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
@@ -482,6 +486,9 @@ public class MainActivity extends Activity {
                         break;
                     case 59:
                         startActivity(new Intent(mContext, ViewAnimationUtilsActivity.class));
+                        break;
+                    case 60:
+                        startActivity(new Intent(mContext, SwipeBackActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

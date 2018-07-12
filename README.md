@@ -61,3 +61,4 @@
 - 58.悬浮窗
 - 59.ItemDecoration
 - 60.ViewAnimationUtils
+- 61.右滑返回（关闭Activity）

@@ -284,6 +284,9 @@ public class MainActivity extends Activity {
                 case 61:
                     login.setNote("Android Architecture Component--Lifecycle");
                     break;
+                case 62:
+                    login.setNote("Android Architecture Component--LiveData && ViewModel");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;

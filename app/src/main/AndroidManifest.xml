@@ -49,7 +49,8 @@
         <activity android:name=".base.BaseWebViewActivity" />
         <activity
             android:name=".activity.TagActivity"
-            android:theme="@android:style/Theme.Translucent" />
+            android:label="TagActivity"
+            android:theme="@style/AppTheme" />
         <activity android:name=".activity.ViewPagerActivity" />
         <activity android:name=".activity.HtmlCacheActivity" />
         <activity android:name=".activity.ParallaxActivity" />

@@ -1,8 +1,8 @@
 package com.jia.demo.activity;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -15,7 +15,7 @@ import com.jia.demo.R;
  * Created by jia on 2017/3/22 0022.
  * 人之所以能，是相信能
  */
-public class TagActivity extends Activity {
+public class TagActivity extends AppCompatActivity {
 
     private FlexboxLayout flexbox_layout;
 

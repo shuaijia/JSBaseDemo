@@ -62,3 +62,5 @@
 - 59.ItemDecoration
 - 60.ViewAnimationUtils
 - 61.右滑返回（关闭Activity）
+- 62.Android Architecture Component--Lifecycle
+- 63.Android Architecture Component--LiveData && ViewModel

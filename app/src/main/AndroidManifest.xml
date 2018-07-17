@@ -159,9 +159,14 @@
         <!-- 悬浮窗 -->
         <service android:name=".service.FloatWindowService" />
 
-        <activity android:name=".activity.swipeback.SwipeBackActivity"
+        <activity
+            android:name=".activity.swipeback.SwipeBackActivity"
             android:label="SwipeBackActivity"
             android:theme="@style/SwipeBackStyle" />
+        <activity
+            android:name=".activity.LifecycleActivity"
+            android:label="LifecycleActivity"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

@@ -22,6 +22,7 @@ import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.DiagonalActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
 import com.jia.demo.activity.FabActivity;
+import com.jia.demo.activity.LifecycleActivity;
 import com.jia.demo.activity.ViewAnimationUtilsActivity;
 import com.jia.demo.activity.GalleryActivity;
 import com.jia.demo.activity.GlideImageViewActivity;
@@ -280,6 +281,9 @@ public class MainActivity extends Activity {
                 case 60:
                     login.setNote("右滑返回（关闭Activity）");
                     break;
+                case 61:
+                    login.setNote("Android Architecture Component--Lifecycle");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -302,10 +306,10 @@ public class MainActivity extends Activity {
 
                 switch (position) {
                     case 0:
-//                        startActivity(new Intent(mContext, TagActivity.class));
-                        String expression = "50*(3-1)/3+2";
-                        double result = Calculator.conversion(expression);
-                        Toast.makeText(MainActivity.this, result + "", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(mContext, TagActivity.class));
+//                        String expression = "50*(3-1)/3+2";
+//                        double result = Calculator.conversion(expression);
+//                        Toast.makeText(MainActivity.this, result + "", Toast.LENGTH_SHORT).show();
 
                         break;
                     case 1:
@@ -490,6 +494,9 @@ public class MainActivity extends Activity {
                     case 60:
                         startActivity(new Intent(mContext, SwipeBackActivity.class));
                         break;
+                    case 61:
+                        startActivity(new Intent(mContext, LifecycleActivity.class));
+                        break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();
                 }
@@ -500,7 +507,5 @@ public class MainActivity extends Activity {
                 Log.e("Tag", " onJsItemLongClick----" + position);
             }
         });
-
-
     }
 }

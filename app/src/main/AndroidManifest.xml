@@ -167,6 +167,10 @@
         <activity
             android:name=".activity.LifecycleActivity"
             android:label="LifecycleActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.LiveDataActivity"
+            android:label="LiveDataActivity"
             android:theme="@style/AppTheme"/>
     </application>
 

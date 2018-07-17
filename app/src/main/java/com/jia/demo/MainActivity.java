@@ -23,6 +23,7 @@ import com.jia.demo.activity.DiagonalActivity;
 import com.jia.demo.activity.EventBusFirstActivity;
 import com.jia.demo.activity.FabActivity;
 import com.jia.demo.activity.LifecycleActivity;
+import com.jia.demo.activity.LiveDataActivity;
 import com.jia.demo.activity.ViewAnimationUtilsActivity;
 import com.jia.demo.activity.GalleryActivity;
 import com.jia.demo.activity.GlideImageViewActivity;
@@ -499,6 +500,9 @@ public class MainActivity extends Activity {
                         break;
                     case 61:
                         startActivity(new Intent(mContext, LifecycleActivity.class));
+                        break;
+                    case 62:
+                        startActivity(new Intent(mContext, LiveDataActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();

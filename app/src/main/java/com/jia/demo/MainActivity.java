@@ -17,6 +17,7 @@ import com.jia.demo.activity.CameraActivity;
 import com.jia.demo.activity.ChristmasSnowActivity;
 import com.jia.demo.activity.CircularProgressActivity;
 import com.jia.demo.activity.CoordinatorLayoutActivity;
+import com.jia.demo.activity.DYKeyboardActivity;
 import com.jia.demo.activity.DashLineViewActivity;
 import com.jia.demo.activity.DataBindingActivity;
 import com.jia.demo.activity.DiagonalActivity;
@@ -288,6 +289,9 @@ public class MainActivity extends Activity {
                 case 62:
                     login.setNote("Android Architecture Component--LiveData && ViewModel");
                     break;
+                case 63:
+                    login.setNote("AndroidTv端 自定义键盘");
+                    break;
                 default:
                     login.setNote("第" + (i + 1) + "条数据");
                     break;
@@ -503,6 +507,9 @@ public class MainActivity extends Activity {
                         break;
                     case 62:
                         startActivity(new Intent(mContext, LiveDataActivity.class));
+                        break;
+                    case 63:
+                        startActivity(new Intent(mContext, DYKeyboardActivity.class));
                         break;
                     default:
                         Toast.makeText(MainActivity.this, "点击第" + (position + 1) + "条", Toast.LENGTH_LONG).show();
